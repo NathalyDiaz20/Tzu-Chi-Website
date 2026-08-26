@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fundación Budista Tzu Chi RD</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#f7f9fb",
+                    "on-secondary-container": "#446d59",
+                    "surface-bright": "#f7f9fb",
+                    "on-primary-fixed": "#002022",
+                    "surface-container-low": "#f2f4f6",
+                    "on-surface": "#191c1e",
+                    "on-secondary-fixed-variant": "#264e3c",
+                    "inverse-primary": "#6fd6e0",
+                    "surface-tint": "#006971",
+                    "deep-teal": "#005F66",
+                    "on-tertiary-fixed": "#251a00",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#c0edd4",
+                    "surface-container-highest": "#e0e3e5",
+                    "primary-fixed": "#8df2fd",
+                    "inverse-surface": "#2d3133",
+                    "on-background": "#191c1e",
+                    "secondary-fixed-dim": "#a5d0b8",
+                    "on-tertiary": "#ffffff",
+                    "outline": "#6d797a",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#e6e8ea",
+                    "tertiary": "#735802",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#f5feff",
+                    "primary-container": "#00818b",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#eff1f3",
+                    "surface-dim": "#d8dadc",
+                    "on-tertiary-fixed-variant": "#5a4400",
+                    "on-primary-fixed-variant": "#004f55",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#c0edd4",
+                    "on-tertiary-container": "#fffbff",
+                    "surface-container": "#eceef0",
+                    "on-error": "#ffffff",
+                    "surface": "#f7f9fb",
+                    "on-surface-variant": "#3d494a",
+                    "tertiary-fixed-dim": "#e7c268",
+                    "outline-variant": "#bdc9ca",
+                    "surface-variant": "#e0e3e5",
+                    "hope-orange": "#F4A261",
+                    "tertiary-fixed": "#ffdf96",
+                    "primary": "#00666e",
+                    "tzu-chi-blue": "#E3F2FD",
+                    "primary-fixed-dim": "#6fd6e0",
+                    "surface-warm": "#FAF9F6",
+                    "on-secondary-fixed": "#002114",
+                    "tertiary-container": "#8e711f",
+                    "secondary": "#3e6653"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1200px",
+                    "margin-mobile": "16px",
+                    "section-gap": "80px",
+                    "unit": "8px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-xl": ["\"Source Serif 4\""],
+                    "headline-xl-mobile": ["\"Source Serif 4\""],
+                    "headline-md": ["\"Source Serif 4\""],
+                    "body-lg": ["Libre Franklin"],
+                    "label-sm": ["Libre Franklin"],
+                    "body-md": ["Libre Franklin"],
+                    "headline-lg": ["\"Source Serif 4\""]
+            },
+            "fontSize": {
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-xl-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["36px", {"lineHeight": "44px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden antialiased">
+<!-- Utility Bar -->
+<div class="hidden md:flex justify-between items-center bg-surface-container-high py-2 px-margin-mobile md:px-gutter max-w-container-max mx-auto text-label-sm font-label-sm text-on-surface-variant">
+<div class="flex items-center space-x-6">
+<a class="hover:text-primary transition-colors" href="#">Global</a>
+<a class="hover:text-primary transition-colors" href="#">Tienda Jing Si</a>
+<a class="hover:text-primary transition-colors" href="#">Da Ai TV</a>
+</div>
+<div class="flex items-center space-x-6">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-base">language</span>
+<span>Español</span> <span class="opacity-50">|</span> <a class="hover:text-primary transition-colors" href="#">English</a> <span class="opacity-50">|</span> <a class="hover:text-primary transition-colors" href="#">中文</a>
+</div>
+<div class="flex items-center space-x-4">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">facebook</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">photo_camera</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">smart_display</span></a>
+</div>
+<a class="hover:text-primary transition-colors uppercase tracking-wider font-bold" href="#">Contáctenos</a>
+</div>
+</div>
+<!-- TopAppBar -->
+<header class="bg-surface shadow-sm docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+<!-- Leading Icon -->
+<button class="md:hidden text-primary cursor-pointer active:scale-95 transition-all p-2 rounded-full hover:bg-tzu-chi-blue/10">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<!-- Brand Logo -->
+<div class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-3">
+<span class="material-symbols-outlined filled text-3xl">spa</span>
+<span>Fundación Budista Tzu Chi RD</span>
+</div>
+<!-- Desktop Navigation -->
+<nav class="hidden lg:flex items-center space-x-6 font-label-sm text-label-sm">
+<a class="text-on-surface-variant hover:text-primary hover:bg-tzu-chi-blue/10 transition-colors duration-300 py-2 px-2 rounded" href="#">Quiénes Somos</a>
+<a class="text-on-surface-variant hover:text-primary hover:bg-tzu-chi-blue/10 transition-colors duration-300 py-2 px-2 rounded" href="#">Qué Hacemos</a>
+<a class="text-on-surface-variant hover:text-primary hover:bg-tzu-chi-blue/10 transition-colors duration-300 py-2 px-2 rounded" href="#">Nuestros Valores</a>
+<a class="text-on-surface-variant hover:text-primary hover:bg-tzu-chi-blue/10 transition-colors duration-300 py-2 px-2 rounded" href="#">Llegada a RD</a>
+<a class="text-on-surface-variant hover:text-primary hover:bg-tzu-chi-blue/10 transition-colors duration-300 py-2 px-2 rounded" href="#">Eventos</a>
+</nav>
+<!-- Trailing Action -->
+<div class="hidden md:flex gap-3">
+<button class="border-2 border-primary text-primary font-label-sm text-label-sm uppercase tracking-widest px-5 py-2.5 rounded-full hover:bg-tzu-chi-blue/20 transition-colors shadow-sm">
+                Unirme como Voluntario
+            </button>
+<button class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest px-5 py-2.5 rounded-full hover:bg-deep-teal transition-colors shadow-sm">
+                Hacer Donación
+            </button>
+</div>
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined filled">volunteer_activism</span>
+</button>
+</div>
+</header>
+<!-- Navigation Drawer (Hidden by default, structure provided based on JSON) -->
+<!-- Add JS logic to toggle 'translate-x-0' on button click -->
+<div class="fixed inset-y-0 left-0 w-80 bg-surface-container-low shadow-xl flex flex-col h-full py-6 transform -translate-x-full transition-transform duration-300 z-50 md:hidden">
+<div class="px-6 mb-8 flex justify-between items-center">
+<h2 class="font-headline-md text-headline-md text-primary">Menú Principal</h2>
+<button class="text-on-surface-variant">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-2 font-label-sm text-label-sm">
+<a class="text-on-surface-variant hover:bg-surface-container-high mx-2 py-3 px-4 rounded-full flex items-center gap-4 tap-highlight-transparent transition-all" href="#">
+<span class="material-symbols-outlined">diversity_3</span>
+                Quiénes Somos
+            </a>
+<a class="text-on-surface-variant hover:bg-surface-container-high mx-2 py-3 px-4 rounded-full flex items-center gap-4 tap-highlight-transparent transition-all" href="#">
+<span class="material-symbols-outlined">volunteer_activism</span>
+                Qué Hacemos
+            </a>
+<a class="text-on-surface-variant hover:bg-surface-container-high mx-2 py-3 px-4 rounded-full flex items-center gap-4 tap-highlight-transparent transition-all" href="#">
+<span class="material-symbols-outlined">favorite</span>
+                Nuestros Valores
+            </a>
+<a class="text-on-surface-variant hover:bg-surface-container-high mx-2 py-3 px-4 rounded-full flex items-center gap-4 tap-highlight-transparent transition-all" href="#">
+<span class="material-symbols-outlined">location_on</span>
+                Llegada a RD
+            </a>
+<a class="text-on-surface-variant hover:bg-surface-container-high mx-2 py-3 px-4 rounded-full flex items-center gap-4 tap-highlight-transparent transition-all" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+                Eventos
+            </a>
+</nav>
+</div>
+<!-- Overlay for drawer -->
+<div class="fixed inset-0 bg-black/20 z-40 hidden md:hidden"></div>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[707px] min-h-[600px] flex items-center">
+<!-- Background Image -->
+<div class="absolute inset-0 w-full h-full">
+<div class="w-full h-full bg-cover bg-center" data-alt="A wide, sweeping, high-quality photograph taken during the golden hour in the Dominican Republic, showing a diverse group of compassionate Tzu Chi volunteers in their blue and white uniforms warmly distributing aid to local community members. The warm Caribbean sunlight bathes the scene, highlighting smiles and genuine human connection. The lighting creates a serene, hopeful, and deeply emotional mood. The aesthetic is premium humanitarian, with soft contrasts and a focus on tactile human interaction, perfectly embodying a bright, modern, and inspiring light-mode design palette." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZ-4qtJv0eH2JpdaeFOMCApKxS3iRG-Ehmc3N9smKoiof9Qzv-svEhFbtKACiYgmCoRLHVo54LOylgRUyR3C5yta8Rkn4fiug0ZCUYGkjuFKpkmD7yz3KOvw-Isg-hFoWrzL96qCLQVrWvQulJBUUrkMQU217UOSyTmdynzd7B5IJdqghjt2BAn57eYIhzAcgHvT4yLPggMGEgfs3Gjp-2gh8d8iB85JKHfneUssaTlxZjrXijc_SV')"></div>
+<!-- Soft Overlay -->
+<div class="absolute inset-0 bg-gradient-to-r from-surface-warm/90 via-surface-warm/60 to-transparent"></div>
+</div>
+<!-- Content -->
+<div class="relative z-10 w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="max-w-2xl">
+<span class="inline-block px-4 py-1 bg-secondary-container/50 text-on-secondary-container font-label-sm text-label-sm rounded-full mb-6 uppercase tracking-widest backdrop-blur-sm">
+                        República Dominicana
+                    </span>
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface mb-6 text-balance">
+                        Sembrando compasión, transformando vidas.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 text-balance">
+                        En Tzu Chi RD servimos a nuestras comunidades con compasión, amor y acción humanitaria.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest px-8 py-4 rounded-full hover:bg-deep-teal transition-all shadow-sm flex justify-center items-center gap-2">
+<span class="material-symbols-outlined text-lg">volunteer_activism</span>
+                            Unirme como Voluntario
+                        </button>
+<button class="border-2 border-primary text-primary font-label-sm text-label-sm uppercase tracking-widest px-8 py-4 rounded-full hover:bg-tzu-chi-blue/20 transition-all flex justify-center items-center gap-2 bg-surface/50 backdrop-blur-sm">
+                            Hacer Donación
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 1. QUIÉNES SOMOS -->
+<section class="py-section-gap bg-surface px-margin-mobile md:px-gutter">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Quiénes Somos</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                Fundada sobre los principios de sinceridad, integridad, confianza y honestidad, la Fundación Budista Tzu Chi es una organización humanitaria internacional dedicada a aliviar el sufrimiento en todo el mundo.
+            </p>
+<button class="border border-outline text-primary font-label-sm text-label-sm uppercase tracking-widest px-6 py-3 rounded-full hover:bg-surface-container-low transition-colors">
+                Conoce más
+            </button>
+</div>
+<div class="bg-surface-container-high rounded-xl h-96 w-full flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-6xl">image</span>
+</div>
+</div>
+</section>
+<!-- 2. QUÉ HACEMOS -->
+<section class="py-section-gap bg-surface-container-low px-margin-mobile md:px-gutter">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-12 text-center">Qué Hacemos</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">favorite</span>
+<h3 class="font-headline-md text-headline-md mb-2">Caridad</h3>
+<p class="font-body-md text-on-surface-variant">Asistencia directa a familias y comunidades vulnerables.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">medical_services</span>
+<h3 class="font-headline-md text-headline-md mb-2">Medicina</h3>
+<p class="font-body-md text-on-surface-variant">Atención médica gratuita y jornadas de salud preventivas.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">school</span>
+<h3 class="font-headline-md text-headline-md mb-2">Educación</h3>
+<p class="font-body-md text-on-surface-variant">Fomentando valores y brindando oportunidades educativas.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">handshake</span>
+<h3 class="font-headline-md text-headline-md mb-2">Ayuda Humanitaria</h3>
+<p class="font-body-md text-on-surface-variant">Respuesta integral a las necesidades humanas fundamentales.</p>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">flood</span>
+<h3 class="font-headline-md text-headline-md mb-2">Socorro</h3>
+<p class="font-body-md text-on-surface-variant">Asistencia inmediata y reconstrucción en zonas de desastre.</p>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">eco</span>
+<h3 class="font-headline-md text-headline-md mb-2">Medio Ambiente</h3>
+<p class="font-body-md text-on-surface-variant">Protección del planeta a través del reciclaje y la educación.</p>
+</div>
+<!-- Card 7 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">menu_book</span>
+<h3 class="font-headline-md text-headline-md mb-2">Cultura</h3>
+<p class="font-body-md text-on-surface-variant">Promoviendo la paz y la armonía social a través del humanismo.</p>
+</div>
+<!-- Card 8 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">groups</span>
+<h3 class="font-headline-md text-headline-md mb-2">Voluntariado</h3>
+<p class="font-body-md text-on-surface-variant">Movilizando el amor compasivo en las comunidades locales.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. NUESTROS VALORES -->
+<section class="py-section-gap bg-surface px-margin-mobile md:px-gutter">
+<div class="max-w-container-max mx-auto text-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-12">Nuestros Valores</h2>
+<div class="flex flex-wrap justify-center gap-8">
+<div class="flex flex-col items-center max-w-[150px]">
+<div class="w-20 h-20 bg-secondary-container rounded-full flex items-center justify-center mb-4 text-on-secondary-container">
+<span class="material-symbols-outlined text-3xl">sentiment_satisfied</span>
+</div>
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest">Gratitud</h4>
+</div>
+<div class="flex flex-col items-center max-w-[150px]">
+<div class="w-20 h-20 bg-secondary-container rounded-full flex items-center justify-center mb-4 text-on-secondary-container">
+<span class="material-symbols-outlined text-3xl">handshake</span>
+</div>
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest">Respeto</h4>
+</div>
+<div class="flex flex-col items-center max-w-[150px]">
+<div class="w-20 h-20 bg-secondary-container rounded-full flex items-center justify-center mb-4 text-on-secondary-container">
+<span class="material-symbols-outlined text-3xl">favorite</span>
+</div>
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest">Amor</h4>
+</div>
+<div class="flex flex-col items-center max-w-[150px]">
+<div class="w-20 h-20 bg-secondary-container rounded-full flex items-center justify-center mb-4 text-on-secondary-container">
+<span class="material-symbols-outlined text-3xl">spa</span>
+</div>
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest">Compasión</h4>
+</div>
+<div class="flex flex-col items-center max-w-[150px]">
+<div class="w-20 h-20 bg-secondary-container rounded-full flex items-center justify-center mb-4 text-on-secondary-container">
+<span class="material-symbols-outlined text-3xl">volunteer_activism</span>
+</div>
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest">Servicio</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. LLEGADA A RD -->
+<section class="py-section-gap bg-surface-container-low px-margin-mobile md:px-gutter">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-12 text-center">Nuestra Historia en RD</h2>
+<div class="space-y-8 border-l-2 border-primary/30 pl-6 ml-4 md:ml-20">
+<div class="relative">
+<div class="absolute -left-[35px] top-1 w-4 h-4 rounded-full bg-primary ring-4 ring-surface-container-low"></div>
+<h3 class="font-headline-md text-primary mb-2">1998</h3>
+<p class="font-body-md text-on-surface-variant">Llegada inicial en respuesta al Huracán Georges, marcando el inicio de la misión de Tzu Chi en la República Dominicana.</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[35px] top-1 w-4 h-4 rounded-full bg-primary ring-4 ring-surface-container-low"></div>
+<h3 class="font-headline-md text-primary mb-2">2000</h3>
+<p class="font-body-md text-on-surface-variant">Inauguración de la Escuela Tzu Chi en La Romana, brindando educación de calidad a cientos de niños de escasos recursos.</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[35px] top-1 w-4 h-4 rounded-full bg-primary ring-4 ring-surface-container-low"></div>
+<h3 class="font-headline-md text-primary mb-2">Hoy</h3>
+<p class="font-body-md text-on-surface-variant">Continuamos expandiendo nuestro impacto a través de programas de salud, educación, reciclaje y ayuda comunitaria en todo el país.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. EVENTOS RECIENTES -->
+<section class="py-section-gap bg-surface px-margin-mobile md:px-gutter">
+<div class="max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary">Eventos Recientes</h2>
+<button class="text-primary font-label-sm text-label-sm uppercase tracking-widest hover:underline">Ver todos</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
+<div class="h-48 bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-4xl text-on-surface-variant">image</span></div>
+<div class="p-6">
+<span class="text-xs font-bold text-primary mb-2 block">31 ENERO, 2026</span>
+<h3 class="font-headline-md mb-2">Inducción para Nuevos Voluntarios</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Una jornada especial en Sabana Grande de Boyá para nuevos voluntarios que desean comenzar su camino de servicio con Tzu Chi.</p>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
+<div class="h-48 bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-4xl text-on-surface-variant">image</span></div>
+<div class="p-6">
+<span class="text-xs font-bold text-primary mb-2 block">19 JUNIO, 2026</span>
+<h3 class="font-headline-md mb-2">Taller del Club de Docentes Tzu Chi RD</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Primer taller de capacitación del Club de Docentes Tzu Chi RD, enfocado en fortalecer a quienes educan y acompañan a las nuevas generaciones.</p>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
+<div class="h-48 bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-4xl text-on-surface-variant">image</span></div>
+<div class="p-6">
+<span class="text-xs font-bold text-primary mb-2 block">12 JULIO, 2026</span>
+<h3 class="font-headline-md mb-2">Tzu Chi lleva amor y solidaridad a Sabana de la Mar</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Una jornada de ayuda y solidaridad llevó el apoyo de Tzu Chi a familias de Sabana de la Mar.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. NOTICIAS E HISTORIAS -->
+<section class="py-section-gap bg-surface-container-low px-margin-mobile md:px-gutter">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-12">Noticias e Historias</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Large Story -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm flex flex-col h-full">
+<div class="h-64 md:h-80 bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-4xl text-on-surface-variant">image</span></div>
+<div class="p-8 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-2xl mb-4">Adultos mayores impulsan el cambio ambiental en Rivera</h3>
+<p class="font-body-md text-on-surface-variant mb-6">En Rivera, Santo Domingo, cientos de adultos mayores han convertido el reciclaje en una forma de proteger su comunidad, apoyar a otras personas y fortalecer los lazos entre vecinos.</p>
+</div>
+<a class="text-primary font-label-sm self-start hover:underline" href="https://global.tzuchi.org/elders-drive-recycling-change-in-dominican-republic-rivera" target="_blank">Leer historia completa</a>
+</div>
+</div>
+<!-- Small Stories -->
+<div class="flex flex-col gap-6">
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm flex h-32">
+<div class="w-1/3 bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-on-surface-variant">image</span></div>
+<div class="w-2/3 p-4 flex flex-col justify-center">
+<h4 class="font-bold text-sm mb-2 line-clamp-2">El reciclaje transforma la comunidad de Rivera</h4>
+<span class="text-xs text-on-surface-variant">9 marzo, 2026</span>
+</div>
+</div>
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm flex h-32">
+<div class="w-1/3 bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-on-surface-variant">image</span></div>
+<div class="w-2/3 p-4 flex flex-col justify-center">
+<h4 class="font-bold text-sm mb-2 line-clamp-2">Educación que transforma vidas en La Romana</h4>
+<span class="text-xs text-on-surface-variant">29 mayo, 2025</span>
+</div>
+</div>
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm flex h-32">
+<div class="w-1/3 bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-on-surface-variant">image</span></div>
+<div class="w-2/3 p-4 flex flex-col justify-center">
+<h4 class="font-bold text-sm mb-2 line-clamp-2">Tzu Chi lleva salud y alimentos a Manabao</h4>
+<span class="text-xs text-on-surface-variant">14 agosto, 2025</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. NUESTRO IMPACTO -->
+<section class="py-section-gap bg-primary text-on-primary px-margin-mobile md:px-gutter">
+<div class="max-w-container-max mx-auto text-center">
+<h2 class="font-headline-lg text-headline-lg mb-12">Nuestro Impacto</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div>
+<div class="text-4xl md:text-5xl font-bold mb-2">50K+</div>
+<div class="font-label-sm uppercase tracking-wider opacity-80">Beneficiarios</div>
+</div>
+<div>
+<div class="text-4xl md:text-5xl font-bold mb-2">1.2K</div>
+<div class="font-label-sm uppercase tracking-wider opacity-80">Voluntarios</div>
+</div>
+<div>
+<div class="text-4xl md:text-5xl font-bold mb-2">300+</div>
+<div class="font-label-sm uppercase tracking-wider opacity-80">Actividades Anuales</div>
+</div>
+<div>
+<div class="text-4xl md:text-5xl font-bold mb-2">25</div>
+<div class="font-label-sm uppercase tracking-wider opacity-80">Comunidades Atendidas</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. VOLUNTARIADO -->
+<section class="py-section-gap bg-surface px-margin-mobile md:px-gutter text-center">
+<div class="max-w-3xl mx-auto">
+<span class="material-symbols-outlined text-5xl text-primary mb-6">volunteer_activism</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Tu tiempo puede transformar una vida</h2>
+<p class="font-body-lg text-on-surface-variant mb-8">Únete a nuestra red de compasión. Cada pequeño esfuerzo cuenta cuando se suma al de miles de corazones dispuestos a servir.</p>
+<button class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest px-8 py-4 rounded-full hover:bg-deep-teal transition-all shadow-sm">
+            Convertirme en Voluntario
+        </button>
+</div>
+</section>
+<!-- 9. DONACIONES -->
+<section class="py-section-gap bg-surface-container-low px-margin-mobile md:px-gutter text-center">
+<div class="max-w-3xl mx-auto">
+<span class="material-symbols-outlined text-5xl text-primary mb-6">savings</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Tu donación puede convertirse en esperanza</h2>
+<p class="font-body-lg text-on-surface-variant mb-8">Con tu aporte económico nos ayudas a llevar alimentos, medicinas, educación y socorro a quienes más lo necesitan en la República Dominicana.</p>
+<button class="bg-secondary text-on-secondary font-label-sm text-label-sm uppercase tracking-widest px-8 py-4 rounded-full hover:bg-secondary/90 transition-all shadow-sm">
+            Hacer una Donación
+        </button>
+</div>
+</section>
+<!-- 10. CONTÁCTENOS -->
+<section class="py-section-gap bg-surface px-margin-mobile md:px-gutter">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">Contáctenos</h2>
+<div class="space-y-6 text-on-surface-variant font-body-md mb-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<p>Calle Ficticia 123, Sector Ejemplo<br/>Santo Domingo, República Dominicana</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">phone</span>
+<p>+1 (809) 555-0123</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">mail</span>
+<p>info@tzuchi.org.do</p>
+</div>
+</div>
+<div class="w-full h-64 bg-surface-container-high rounded-xl flex items-center justify-center text-on-surface-variant shadow-inner">
+                    [Mapa Placeholder]
+                </div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl shadow-sm">
+<h3 class="font-headline-md mb-6 text-primary">Envíanos un mensaje</h3>
+<form class="space-y-4">
+<div>
+<label class="block text-sm font-medium text-on-surface mb-1">Nombre</label>
+<input class="w-full rounded-md border-outline-variant bg-surface focus:border-primary focus:ring-primary" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-on-surface mb-1">Correo Electrónico</label>
+<input class="w-full rounded-md border-outline-variant bg-surface focus:border-primary focus:ring-primary" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-on-surface mb-1">Mensaje</label>
+<textarea class="w-full rounded-md border-outline-variant bg-surface focus:border-primary focus:ring-primary" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest px-6 py-3 rounded-md hover:bg-deep-teal transition-all" type="button">
+                        Enviar Mensaje
+                    </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-highest border-t border-outline-variant w-full rounded-none">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto py-16">
+<div class="col-span-1 md:col-span-2">
+<div class="font-headline-lg text-headline-lg text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined filled text-4xl">spa</span>
+                        Fundación Budista Tzu Chi RD
+                    </div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+                        Compasión en acción. Aliviando el sufrimiento y trayendo esperanza a las comunidades de la República Dominicana a través del amor y el servicio desinteresado.
+                    </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-sm text-label-sm text-on-surface uppercase tracking-widest mb-6">Enlaces</h4>
+<ul class="flex flex-col gap-4 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Global</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Tienda Jing Si</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Da Ai TV</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Política de Privacidad</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-sm text-label-sm text-on-surface uppercase tracking-widest mb-6">Contacto</h4>
+<ul class="flex flex-col gap-4 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-1 text-lg">location_on</span>
+<span>Santo Domingo, República Dominicana</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">mail</span>
+<a class="hover:text-primary transition-colors" href="#">Contacto</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 py-6 px-margin-mobile md:px-gutter text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+                    © 2026 Fundación Budista Tzu Chi República Dominicana. Todos los derechos reservados.
+                </p>
+</div>
+</footer>
+</main>
+</body></html>
