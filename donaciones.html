@@ -1,12 +1,17 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donaciones - Fundación Budista Tzu Chi RD</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" />
+
     <script>
         tailwind.config = {
             theme: {
@@ -59,160 +64,866 @@
             }
         }
     </script>
+
     <style>
-        .font-headline-lg { font-family: 'Source Serif 4', serif; font-size: 2rem; line-height: 2.5rem; }
-        .font-headline-md { font-family: 'Source Serif 4', serif; font-size: 1.75rem; line-height: 2.25rem; }
-        .font-body-lg { font-family: 'Libre Franklin', sans-serif; font-size: 1.125rem; line-height: 1.75rem; }
-        .font-body-md { font-family: 'Libre Franklin', sans-serif; font-size: 1rem; line-height: 1.5rem; }
-        .font-label-sm { font-family: 'Libre Franklin', sans-serif; font-size: 0.875rem; line-height: 1.25rem; }
-        .text-headline-lg { font-size: 2rem; line-height: 2.5rem; }
-        .text-label-sm { font-size: 0.875rem; line-height: 1.25rem; }
+        .font-headline-lg {
+            font-family: 'Source Serif 4', serif;
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+
+        .font-headline-md {
+            font-family: 'Source Serif 4', serif;
+            font-size: 1.75rem;
+            line-height: 2.25rem;
+        }
+
+        .font-body-lg {
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+
+        .font-body-md {
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+
+        .font-label-sm {
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+        }
+
+        .text-headline-lg {
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+
+        .text-label-sm {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+        }
     </style>
 </head>
+
+
 <body class="bg-surface text-on-surface">
+
     <!-- Header/Navigation -->
     <header class="sticky top-0 z-40 bg-surface border-b border-outline/20">
+
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-4 flex justify-between items-center">
+
             <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition">
                 <img src="images/tzu chi logo.png" alt="Tzu Chi Logo" class="h-10 w-auto"/>
                 <span class="font-headline-md text-primary hidden sm:inline">Tzu Chi</span>
             </a>
-            <a href="index.html" class="text-primary font-label-sm uppercase tracking-widest hover:underline">Volver a inicio</a>
+
+            <div class="flex items-center gap-4">
+
+                <!-- Language Selector -->
+                <div class="font-label-sm flex items-center gap-2 whitespace-nowrap">
+                    <a href="#" data-donation-language="es" class="hover:underline">Español</a>
+                    <span>|</span>
+                    <a href="#" data-donation-language="en" class="hover:underline">English</a>
+                    <span>|</span>
+                    <a href="#" data-donation-language="zh" class="hover:underline">中文</a>
+                </div>
+
+                <a href="index.html"
+                   id="back-home"
+                   class="text-primary font-label-sm uppercase tracking-widest hover:underline">
+                    Volver a inicio
+                </a>
+
+            </div>
+
         </div>
     </header>
 
+
     <!-- Main Content -->
     <main class="min-h-screen py-section-gap px-margin-mobile md:px-gutter">
+
         <div class="max-w-2xl mx-auto">
+
             <!-- Hero Section -->
             <div class="text-center mb-12">
-                <h1 class="font-headline-lg text-primary mb-4">Tu Donación Cuenta</h1>
-                <p class="font-body-lg text-on-surface-variant mb-2">Con tu aporte económico nos ayudas a llevar alimentos, medicinas, educación y socorro a quienes más lo necesitan en la República Dominicana.</p>
+
+                <h1 id="donation-title"
+                    class="font-headline-lg text-primary mb-4">
+                    Tu Donación Cuenta
+                </h1>
+
+                <p id="donation-description"
+                   class="font-body-lg text-on-surface-variant mb-2">
+                    Con tu aporte económico nos ayudas a llevar alimentos, medicinas, educación y socorro a quienes más lo necesitan en la República Dominicana.
+                </p>
+
             </div>
+
 
             <!-- Donation Methods -->
             <div class="space-y-8">
+
                 <!-- Banco BHD Section -->
                 <div class="bg-surface-container-high rounded-xl p-8 border-l-4 border-primary">
+
                     <div class="flex items-start gap-6 mb-6">
-                        <img src="images/BHD_Bank_Logo.svg" alt="Banco BHD" class="h-16 w-auto"/>
+
+                        <img src="images/BHD_Bank_Logo.svg"
+                             alt="Banco BHD"
+                             class="h-16 w-auto"/>
+
                         <div>
-                            <h2 class="font-headline-md text-primary mb-2">Banco BHD</h2>
-                            <p class="font-body-md text-on-surface-variant">Realiza tu donación directamente a través de nuestras cuentas bancarias</p>
+
+                            <h2 id="bhd-title"
+                                class="font-headline-md text-primary mb-2">
+                                Banco BHD
+                            </h2>
+
+                            <p id="bhd-description"
+                               class="font-body-md text-on-surface-variant">
+                                Realiza tu donación directamente a través de nuestras cuentas bancarias
+                            </p>
+
                         </div>
+
                     </div>
+
 
                     <!-- Accounts -->
                     <div class="space-y-6">
+
                         <!-- Peso Account -->
                         <div class="bg-surface rounded-lg p-6 border border-outline/20">
+
                             <div class="flex justify-between items-start mb-2">
-                                <h3 class="font-headline-sm text-primary">Cuenta Corriente</h3>
-                                <span class="bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm">DOP $</span>
+
+                                <h3 id="current-account"
+                                    class="font-headline-sm text-primary">
+                                    Cuenta Corriente
+                                </h3>
+
+                                <span class="bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm">
+                                    DOP $
+                                </span>
+
                             </div>
+
                             <div class="space-y-2">
+
                                 <div class="flex justify-between items-center">
-                                    <span class="font-body-md text-on-surface-variant">Número de Cuenta:</span>
-                                    <span class="font-body-md font-bold text-primary text-lg">38056250019</span>
+
+                                    <span id="account-number-1"
+                                          class="font-body-md text-on-surface-variant">
+                                        Número de Cuenta:
+                                    </span>
+
+                                    <span class="font-body-md font-bold text-primary text-lg">
+                                        38056250019
+                                    </span>
+
                                 </div>
+
                                 <div class="flex justify-between items-center">
-                                    <span class="font-body-md text-on-surface-variant">Moneda:</span>
-                                    <span class="font-body-md font-bold">Pesos Dominicanos</span>
+
+                                    <span id="currency-1"
+                                          class="font-body-md text-on-surface-variant">
+                                        Moneda:
+                                    </span>
+
+                                    <span id="dominican-pesos"
+                                          class="font-body-md font-bold">
+                                        Pesos Dominicanos
+                                    </span>
+
                                 </div>
+
                             </div>
                         </div>
+
 
                         <!-- Dollar Account -->
                         <div class="bg-surface rounded-lg p-6 border border-outline/20">
+
                             <div class="flex justify-between items-start mb-2">
-                                <h3 class="font-headline-sm text-primary">Cuenta Ahorro</h3>
-                                <span class="bg-secondary text-on-secondary px-3 py-1 rounded-full font-label-sm text-label-sm">USD $</span>
+
+                                <h3 id="savings-account"
+                                    class="font-headline-sm text-primary">
+                                    Cuenta Ahorro
+                                </h3>
+
+                                <span class="bg-secondary text-on-secondary px-3 py-1 rounded-full font-label-sm text-label-sm">
+                                    USD $
+                                </span>
+
                             </div>
+
                             <div class="space-y-2">
+
                                 <div class="flex justify-between items-center">
-                                    <span class="font-body-md text-on-surface-variant">Número de Cuenta:</span>
-                                    <span class="font-body-md font-bold text-primary text-lg">38056250027</span>
+
+                                    <span id="account-number-2"
+                                          class="font-body-md text-on-surface-variant">
+                                        Número de Cuenta:
+                                    </span>
+
+                                    <span class="font-body-md font-bold text-primary text-lg">
+                                        38056250027
+                                    </span>
+
                                 </div>
+
                                 <div class="flex justify-between items-center">
-                                    <span class="font-body-md text-on-surface-variant">Moneda:</span>
-                                    <span class="font-body-md font-bold">Dólares Estadounidenses</span>
+
+                                    <span id="currency-2"
+                                          class="font-body-md text-on-surface-variant">
+                                        Moneda:
+                                    </span>
+
+                                    <span id="us-dollars"
+                                          class="font-body-md font-bold">
+                                        Dólares Estadounidenses
+                                    </span>
+
                                 </div>
+
                             </div>
                         </div>
+
                     </div>
+
 
                     <!-- Organization Info -->
                     <div class="mt-6 pt-6 border-t border-outline/20">
+
                         <div class="space-y-2">
+
                             <div class="flex justify-between items-center">
-                                <span class="font-body-md text-on-surface-variant">Beneficiario:</span>
-                                <span class="font-body-md font-bold">Buddhist Tzu Chi Charity Foundation</span>
+
+                                <span id="beneficiary-label"
+                                      class="font-body-md text-on-surface-variant">
+                                    Beneficiario:
+                                </span>
+
+                                <span class="font-body-md font-bold">
+                                    Buddhist Tzu Chi Charity Foundation
+                                </span>
+
                             </div>
+
                             <div class="flex justify-between items-center">
-                                <span class="font-body-md text-on-surface-variant">RNC:</span>
-                                <span class="font-body-md font-bold text-primary">430314897</span>
+
+                                <span id="rnc-label"
+                                      class="font-body-md text-on-surface-variant">
+                                    RNC:
+                                </span>
+
+                                <span class="font-body-md font-bold text-primary">
+                                    430314897
+                                </span>
+
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
+
 
                 <!-- Additional Information -->
                 <div class="bg-primary-container rounded-xl p-8">
-                    <h3 class="font-headline-md text-primary mb-4">¿Preguntas sobre tu donación?</h3>
-                    <p class="font-body-md text-on-surface-variant mb-6">Puedes ponerte en contacto con nosotros directamente para cualquier pregunta sobre cómo realizar tu donación o para recibir más información sobre nuestros programas.</p>
+
+                    <h3 id="questions-title"
+                        class="font-headline-md text-primary mb-4">
+                        ¿Preguntas sobre tu donación?
+                    </h3>
+
+                    <p id="questions-description"
+                       class="font-body-md text-on-surface-variant mb-6">
+                        Puedes ponerte en contacto con nosotros directamente para cualquier pregunta sobre cómo realizar tu donación o para recibir más información sobre nuestros programas.
+                    </p>
+
                     <div class="flex gap-4">
-                        <a href="https://wa.me/18098483886?text=Hola!%20Tengo%20preguntas%20sobre%20hacer%20una%20donaci%C3%B3n" target="_blank" rel="noopener noreferrer" class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest px-6 py-3 rounded-full hover:bg-deep-teal transition-all inline-flex items-center gap-2">
+
+                        <a id="whatsapp-button"
+                           href="https://wa.me/18098483886?text=Hola!%20Tengo%20preguntas%20sobre%20hacer%20una%20donaci%C3%B3n"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest px-6 py-3 rounded-full hover:bg-deep-teal transition-all inline-flex items-center gap-2">
+
                             <span class="material-symbols-outlined">phone</span>
-                            Contactar por WhatsApp
+
+                            <span id="whatsapp-text">
+                                Contactar por WhatsApp
+                            </span>
+
                         </a>
-                        <a href="index.html#contactenos" class="border-2 border-primary text-primary font-label-sm text-label-sm uppercase tracking-widest px-6 py-3 rounded-full hover:bg-primary/10 transition-all inline-flex items-center gap-2">
+
+
+                        <a href="index.html#contactenos"
+                           class="border-2 border-primary text-primary font-label-sm text-label-sm uppercase tracking-widest px-6 py-3 rounded-full hover:bg-primary/10 transition-all inline-flex items-center gap-2">
+
                             <span class="material-symbols-outlined">mail</span>
-                            Enviar Correo
+
+                            <span id="email-text">
+                                Enviar Correo
+                            </span>
+
                         </a>
+
                     </div>
+
                 </div>
+
 
                 <!-- Impact Section -->
                 <div class="bg-surface-container-high rounded-xl p-8">
-                    <h3 class="font-headline-md text-primary mb-4">Tu impacto importa</h3>
-                    <p class="font-body-md text-on-surface-variant mb-6">Cada donación, sin importar su monto, hace una diferencia real en la vida de las personas. Con tu apoyo podemos:</p>
+
+                    <h3 id="impact-title"
+                        class="font-headline-md text-primary mb-4">
+                        Tu impacto importa
+                    </h3>
+
+                    <p id="impact-description"
+                       class="font-body-md text-on-surface-variant mb-6">
+                        Cada donación, sin importar su monto, hace una diferencia real en la vida de las personas. Con tu apoyo podemos:
+                    </p>
+
                     <ul class="space-y-3">
+
                         <li class="flex gap-3 font-body-md text-on-surface-variant">
-                            <span class="material-symbols-outlined text-primary">check_circle</span>
-                            <span>Entregar alimentos y medicinas a familias necesitadas</span>
+
+                            <span class="material-symbols-outlined text-primary">
+                                check_circle
+                            </span>
+
+                            <span id="impact-1">
+                                Entregar alimentos y medicinas a familias necesitadas
+                            </span>
+
                         </li>
+
+
                         <li class="flex gap-3 font-body-md text-on-surface-variant">
-                            <span class="material-symbols-outlined text-primary">check_circle</span>
-                            <span>Apoyar programas educativos y becas escolares</span>
+
+                            <span class="material-symbols-outlined text-primary">
+                                check_circle
+                            </span>
+
+                            <span id="impact-2">
+                                Apoyar programas educativos y becas escolares
+                            </span>
+
                         </li>
+
+
                         <li class="flex gap-3 font-body-md text-on-surface-variant">
-                            <span class="material-symbols-outlined text-primary">check_circle</span>
-                            <span>Realizar proyectos de protección ambiental</span>
+
+                            <span class="material-symbols-outlined text-primary">
+                                check_circle
+                            </span>
+
+                            <span id="impact-3">
+                                Realizar proyectos de protección ambiental
+                            </span>
+
                         </li>
+
+
                         <li class="flex gap-3 font-body-md text-on-surface-variant">
-                            <span class="material-symbols-outlined text-primary">check_circle</span>
-                            <span>Proporcionar atención médica y dental gratuita</span>
+
+                            <span class="material-symbols-outlined text-primary">
+                                check_circle
+                            </span>
+
+                            <span id="impact-4">
+                                Proporcionar atención médica y dental gratuita
+                            </span>
+
                         </li>
+
                     </ul>
+
                 </div>
+
             </div>
+
 
             <!-- Back Button -->
             <div class="text-center mt-12">
-                <a href="index.html" class="text-primary font-label-sm uppercase tracking-widest hover:underline inline-flex items-center gap-2">
-                    <span class="material-symbols-outlined">arrow_back</span>
-                    Volver al sitio principal
+
+                <a href="index.html"
+                   class="text-primary font-label-sm uppercase tracking-widest hover:underline inline-flex items-center gap-2">
+
+                    <span class="material-symbols-outlined">
+                        arrow_back
+                    </span>
+
+                    <span id="back-main">
+                        Volver al sitio principal
+                    </span>
+
                 </a>
+
             </div>
+
         </div>
+
     </main>
+
 
     <!-- Footer -->
     <footer class="bg-primary text-on-primary py-8 px-margin-mobile md:px-gutter mt-section-gap">
+
         <div class="max-w-container-max mx-auto text-center">
-            <p class="font-body-md mb-2">Fundación Budista Tzu Chi - República Dominicana</p>
-            <p class="font-body-md text-on-primary/80 text-sm">© 2026 Buddhist Tzu Chi Charity Foundation. Todos los derechos reservados.</p>
+
+            <p id="footer-title"
+               class="font-body-md mb-2">
+                Fundación Budista Tzu Chi - República Dominicana
+            </p>
+
+            <p id="footer-copyright"
+               class="font-body-md text-on-primary/80 text-sm">
+                © 2026 Buddhist Tzu Chi Charity Foundation. Todos los derechos reservados.
+            </p>
+
         </div>
+
     </footer>
+
+
+    <!-- ========================================================
+         DONATIONS PAGE TRANSLATION SYSTEM
+         Uses the same localStorage language as index.html
+         ======================================================== -->
+
+    <script>
+
+        const donationTranslations = {
+
+            es: {
+
+                pageTitle: "Donaciones - Fundación Budista Tzu Chi RD",
+
+                backHome: "Volver a inicio",
+
+                donationTitle: "Tu Donación Cuenta",
+
+                donationDescription:
+                    "Con tu aporte económico nos ayudas a llevar alimentos, medicinas, educación y socorro a quienes más lo necesitan en la República Dominicana.",
+
+                bhdTitle: "Banco BHD",
+
+                bhdDescription:
+                    "Realiza tu donación directamente a través de nuestras cuentas bancarias",
+
+                currentAccount: "Cuenta Corriente",
+
+                accountNumber: "Número de Cuenta:",
+
+                currency: "Moneda:",
+
+                dominicanPesos: "Pesos Dominicanos",
+
+                savingsAccount: "Cuenta Ahorro",
+
+                usDollars: "Dólares Estadounidenses",
+
+                beneficiary: "Beneficiario:",
+
+                rnc: "RNC:",
+
+                questionsTitle:
+                    "¿Preguntas sobre tu donación?",
+
+                questionsDescription:
+                    "Puedes ponerte en contacto con nosotros directamente para cualquier pregunta sobre cómo realizar tu donación o para recibir más información sobre nuestros programas.",
+
+                whatsapp:
+                    "Contactar por WhatsApp",
+
+                email:
+                    "Enviar Correo",
+
+                impactTitle:
+                    "Tu impacto importa",
+
+                impactDescription:
+                    "Cada donación, sin importar su monto, hace una diferencia real en la vida de las personas. Con tu apoyo podemos:",
+
+                impact1:
+                    "Entregar alimentos y medicinas a familias necesitadas",
+
+                impact2:
+                    "Apoyar programas educativos y becas escolares",
+
+                impact3:
+                    "Realizar proyectos de protección ambiental",
+
+                impact4:
+                    "Proporcionar atención médica y dental gratuita",
+
+                backMain:
+                    "Volver al sitio principal",
+
+                footerTitle:
+                    "Fundación Budista Tzu Chi - República Dominicana",
+
+                footerCopyright:
+                    "© 2026 Buddhist Tzu Chi Charity Foundation. Todos los derechos reservados.",
+
+                whatsappMessage:
+                    "Hola! Tengo preguntas sobre hacer una donación"
+
+            },
+
+
+            en: {
+
+                pageTitle:
+                    "Donations - Tzu Chi Buddhist Foundation RD",
+
+                backHome:
+                    "Back to Home",
+
+                donationTitle:
+                    "Your Donation Matters",
+
+                donationDescription:
+                    "Your financial contribution helps us provide food, medicine, education, and disaster relief to those who need it most in the Dominican Republic.",
+
+                bhdTitle:
+                    "Banco BHD",
+
+                bhdDescription:
+                    "Make your donation directly through our bank accounts",
+
+                currentAccount:
+                    "Checking Account",
+
+                accountNumber:
+                    "Account Number:",
+
+                currency:
+                    "Currency:",
+
+                dominicanPesos:
+                    "Dominican Pesos",
+
+                savingsAccount:
+                    "Savings Account",
+
+                usDollars:
+                    "United States Dollars",
+
+                beneficiary:
+                    "Beneficiary:",
+
+                rnc:
+                    "RNC:",
+
+                questionsTitle:
+                    "Questions About Your Donation?",
+
+                questionsDescription:
+                    "You can contact us directly with any questions about how to make your donation or to receive more information about our programs.",
+
+                whatsapp:
+                    "Contact Us on WhatsApp",
+
+                email:
+                    "Send Email",
+
+                impactTitle:
+                    "Your Impact Matters",
+
+                impactDescription:
+                    "Every donation, regardless of the amount, makes a real difference in people's lives. With your support, we can:",
+
+                impact1:
+                    "Provide food and medicine to families in need",
+
+                impact2:
+                    "Support educational programs and school scholarships",
+
+                impact3:
+                    "Carry out environmental protection projects",
+
+                impact4:
+                    "Provide free medical and dental care",
+
+                backMain:
+                    "Back to Main Site",
+
+                footerTitle:
+                    "Tzu Chi Buddhist Foundation - Dominican Republic",
+
+                footerCopyright:
+                    "© 2026 Buddhist Tzu Chi Charity Foundation. All rights reserved.",
+
+                whatsappMessage:
+                    "Hello! I have questions about making a donation"
+
+            },
+
+
+            zh: {
+
+                pageTitle:
+                    "捐款 - 慈濟佛教基金會多明尼加共和國分會",
+
+                backHome:
+                    "返回首頁",
+
+                donationTitle:
+                    "您的捐款很重要",
+
+                donationDescription:
+                    "您的捐款能幫助我們在多明尼加共和國為最需要的人提供食物、醫療、教育與災難救援。",
+
+                bhdTitle:
+                    "BHD銀行",
+
+                bhdDescription:
+                    "您可以直接透過我們的銀行帳戶進行捐款",
+
+                currentAccount:
+                    "支票帳戶",
+
+                accountNumber:
+                    "帳戶號碼：",
+
+                currency:
+                    "貨幣：",
+
+                dominicanPesos:
+                    "多明尼加披索",
+
+                savingsAccount:
+                    "儲蓄帳戶",
+
+                usDollars:
+                    "美元",
+
+                beneficiary:
+                    "受款人：",
+
+                rnc:
+                    "RNC：",
+
+                questionsTitle:
+                    "對捐款有疑問嗎？",
+
+                questionsDescription:
+                    "如果您對如何進行捐款有任何疑問，或希望了解更多關於我們的計畫，歡迎直接與我們聯絡。",
+
+                whatsapp:
+                    "透過 WhatsApp 聯絡我們",
+
+                email:
+                    "寄送電子郵件",
+
+                impactTitle:
+                    "您的影響力很重要",
+
+                impactDescription:
+                    "每一筆捐款，不論金額多少，都能為人們的生活帶來實質的改變。有了您的支持，我們可以：",
+
+                impact1:
+                    "為有需要的家庭提供食物與醫療用品",
+
+                impact2:
+                    "支持教育計畫與學生獎學金",
+
+                impact3:
+                    "推動環境保護計畫",
+
+                impact4:
+                    "提供免費醫療與牙科服務",
+
+                backMain:
+                    "返回網站首頁",
+
+                footerTitle:
+                    "慈濟佛教基金會－多明尼加共和國分會",
+
+                footerCopyright:
+                    "© 2026 慈濟佛教基金會多明尼加共和國分會。版權所有。",
+
+                whatsappMessage:
+                    "您好！我想詢問有關捐款的問題"
+
+            }
+
+        };
+
+
+        function setDonationLanguage(language) {
+
+            if (!donationTranslations[language]) {
+                language = "es";
+            }
+
+            const t = donationTranslations[language];
+
+
+            document.documentElement.lang =
+                language === "zh" ? "zh-TW" : language;
+
+
+            document.title = t.pageTitle;
+
+
+            document.getElementById("back-home").textContent =
+                t.backHome;
+
+            document.getElementById("donation-title").textContent =
+                t.donationTitle;
+
+            document.getElementById("donation-description").textContent =
+                t.donationDescription;
+
+            document.getElementById("bhd-title").textContent =
+                t.bhdTitle;
+
+            document.getElementById("bhd-description").textContent =
+                t.bhdDescription;
+
+            document.getElementById("current-account").textContent =
+                t.currentAccount;
+
+            document.getElementById("account-number-1").textContent =
+                t.accountNumber;
+
+            document.getElementById("currency-1").textContent =
+                t.currency;
+
+            document.getElementById("dominican-pesos").textContent =
+                t.dominicanPesos;
+
+            document.getElementById("savings-account").textContent =
+                t.savingsAccount;
+
+            document.getElementById("account-number-2").textContent =
+                t.accountNumber;
+
+            document.getElementById("currency-2").textContent =
+                t.currency;
+
+            document.getElementById("us-dollars").textContent =
+                t.usDollars;
+
+            document.getElementById("beneficiary-label").textContent =
+                t.beneficiary;
+
+            document.getElementById("rnc-label").textContent =
+                t.rnc;
+
+            document.getElementById("questions-title").textContent =
+                t.questionsTitle;
+
+            document.getElementById("questions-description").textContent =
+                t.questionsDescription;
+
+            document.getElementById("whatsapp-text").textContent =
+                t.whatsapp;
+
+            document.getElementById("email-text").textContent =
+                t.email;
+
+            document.getElementById("impact-title").textContent =
+                t.impactTitle;
+
+            document.getElementById("impact-description").textContent =
+                t.impactDescription;
+
+            document.getElementById("impact-1").textContent =
+                t.impact1;
+
+            document.getElementById("impact-2").textContent =
+                t.impact2;
+
+            document.getElementById("impact-3").textContent =
+                t.impact3;
+
+            document.getElementById("impact-4").textContent =
+                t.impact4;
+
+            document.getElementById("back-main").textContent =
+                t.backMain;
+
+            document.getElementById("footer-title").textContent =
+                t.footerTitle;
+
+            document.getElementById("footer-copyright").textContent =
+                t.footerCopyright;
+
+
+            // Update WhatsApp message according to language
+            document.getElementById("whatsapp-button").href =
+                "https://wa.me/18098483886?text=" +
+                encodeURIComponent(t.whatsappMessage);
+
+
+            // Highlight active language
+            document.querySelectorAll("[data-donation-language]").forEach(function(button) {
+
+                const buttonLanguage =
+                    button.getAttribute("data-donation-language");
+
+                button.style.fontWeight =
+                    buttonLanguage === language
+                        ? "bold"
+                        : "normal";
+            });
+
+
+            // Save the same language used by index.html
+            localStorage.setItem(
+                "tzuChiLanguage",
+                language
+            );
+        }
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+            const savedLanguage =
+                localStorage.getItem("tzuChiLanguage");
+
+            const initialLanguage =
+                savedLanguage && donationTranslations[savedLanguage]
+                    ? savedLanguage
+                    : "es";
+
+
+            setDonationLanguage(initialLanguage);
+
+
+            document.querySelectorAll("[data-donation-language]").forEach(function(button) {
+
+                button.addEventListener("click", function(event) {
+
+                    event.preventDefault();
+
+                    const language =
+                        button.getAttribute("data-donation-language");
+
+                    setDonationLanguage(language);
+
+                });
+
+            });
+
+        });
+
+    </script>
+
 </body>
 </html>
+```

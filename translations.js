@@ -540,34 +540,17 @@ const translations = {
 
 let currentLanguage = "es";
 
-// Store the ORIGINAL Spanish text of every text node.
-// This prevents the language from getting "stuck" after switching.
 const originalTextNodes = new WeakMap();
 
-
-// ------------------------------------------------------------
-// Normalize text
-// ------------------------------------------------------------
-
 function normalizeText(text) {
-    return text
+    return (text || "")
         .replace(/\s+/g, " ")
         .trim();
 }
 
-
-// ------------------------------------------------------------
-// Get the original Spanish text of a text node
-// ------------------------------------------------------------
-
 function getOriginalText(node) {
-
     if (!originalTextNodes.has(node)) {
-
-        originalTextNodes.set(
-            node,
-            node.nodeValue
-        );
+        originalTextNodes.set(node, node.nodeValue);
     }
 
     return originalTextNodes.get(node);
@@ -580,7 +563,6 @@ function getOriginalText(node) {
 
 function translatePage(language) {
 
-    // Safety fallback
     if (!translations[language]) {
         language = "es";
     }
@@ -590,9 +572,82 @@ function translatePage(language) {
     const dictionary = translations[language];
 
 
-    // ========================================================
-    // 1. TRANSLATE NORMAL TEXT NODES
-    // ========================================================
+    // --------------------------------------------------------
+    // ELEMENTS WITH data-i18n
+    // --------------------------------------------------------
+    //
+    // The homepage uses data-i18n attributes, but the
+    // translation dictionaries use the original Spanish text
+    // as their keys.
+    //
+    // We therefore translate the actual Spanish text node
+    // instead of trying to use the data-i18n value as the key.
+    //
+    // This also preserves Material Symbols icons.
+    // --------------------------------------------------------
+
+    document.querySelectorAll("[data-i18n]").forEach(function(element) {
+
+        const textNodes = [];
+
+        const walker = document.createTreeWalker(
+            element,
+            NodeFilter.SHOW_TEXT,
+            null
+        );
+
+        while (walker.nextNode()) {
+
+            const node = walker.currentNode;
+            const parent = node.parentElement;
+
+            if (!parent) continue;
+
+            // Ignore Material Symbols icon text
+            if (parent.closest(".material-symbols-outlined")) {
+                continue;
+            }
+
+            if (!normalizeText(node.nodeValue)) {
+                continue;
+            }
+
+            textNodes.push(node);
+        }
+
+
+        if (textNodes.length === 0) {
+            return;
+        }
+
+
+        // Usually the last text node is the visible label
+        // when an icon is also present.
+        const targetNode = textNodes[textNodes.length - 1];
+
+        const originalText = getOriginalText(targetNode);
+        const normalizedOriginal = normalizeText(originalText);
+
+        if (dictionary[normalizedOriginal] !== undefined) {
+
+            const leadingSpaces =
+                originalText.match(/^\s*/)?.[0] || "";
+
+            const trailingSpaces =
+                originalText.match(/\s*$/)?.[0] || "";
+
+            targetNode.nodeValue =
+                leadingSpaces +
+                dictionary[normalizedOriginal] +
+                trailingSpaces;
+        }
+
+    });
+
+
+    // --------------------------------------------------------
+    // NORMAL TEXT WITHOUT data-i18n
+    // --------------------------------------------------------
 
     const walker = document.createTreeWalker(
         document.body,
@@ -606,8 +661,6 @@ function translatePage(language) {
                     return NodeFilter.FILTER_REJECT;
                 }
 
-
-                // Ignore JavaScript and CSS
                 if (
                     parent.tagName === "SCRIPT" ||
                     parent.tagName === "STYLE" ||
@@ -616,19 +669,19 @@ function translatePage(language) {
                     return NodeFilter.FILTER_REJECT;
                 }
 
-
-                // Ignore empty text
                 if (!normalizeText(node.nodeValue)) {
                     return NodeFilter.FILTER_REJECT;
                 }
 
-
-                // If this text belongs to an element using
-                // data-i18n, it will be handled separately.
+                // Already handled above
                 if (parent.closest("[data-i18n]")) {
                     return NodeFilter.FILTER_REJECT;
                 }
 
+                // Never translate Material Symbols
+                if (parent.closest(".material-symbols-outlined")) {
+                    return NodeFilter.FILTER_REJECT;
+                }
 
                 return NodeFilter.FILTER_ACCEPT;
             }
@@ -645,20 +698,11 @@ function translatePage(language) {
 
     textNodes.forEach(function(node) {
 
-        // IMPORTANT:
-        // Always get the ORIGINAL Spanish text.
-        // Never use the currently displayed text.
-        const originalText =
-            getOriginalText(node);
+        const originalText = getOriginalText(node);
+        const normalizedOriginal = normalizeText(originalText);
 
-        const normalizedOriginal =
-            normalizeText(originalText);
-
-
-        // Find translation
         const translatedText =
             dictionary[normalizedOriginal];
-
 
         if (translatedText !== undefined) {
 
@@ -667,7 +711,6 @@ function translatePage(language) {
 
             const trailingSpaces =
                 originalText.match(/\s*$/)?.[0] || "";
-
 
             node.nodeValue =
                 leadingSpaces +
@@ -678,300 +721,207 @@ function translatePage(language) {
     });
 
 
-    // ========================================================
-    // 2. TRANSLATE data-i18n ELEMENTS
-    // ========================================================
-
-    document.querySelectorAll("[data-i18n]").forEach(function(element) {
-
-        let originalKey =
-            element.getAttribute("data-i18n");
-
-
-        // If the data-i18n value corresponds to a Spanish
-        // translation key, use it directly.
-        if (
-            translations.es[originalKey] !== undefined &&
-            dictionary[originalKey] !== undefined
-        ) {
-
-            element.textContent =
-                dictionary[originalKey];
-
-            return;
-        }
-
-
-        // Otherwise remember the element's original text
-        // the first time we encounter it.
-        if (!element.hasAttribute("data-original-i18n")) {
-
-            element.setAttribute(
-                "data-original-i18n",
-                normalizeText(element.textContent)
-            );
-        }
-
-
-        const originalText =
-            element.getAttribute("data-original-i18n");
-
-
-        if (dictionary[originalText] !== undefined) {
-
-            element.textContent =
-                dictionary[originalText];
-        }
-
-    });
-
-
-    // ========================================================
-    // 3. TRANSLATE ALT TEXT
-    // ========================================================
+    // --------------------------------------------------------
+    // ALT TEXT
+    // --------------------------------------------------------
 
     const altTranslations = {
 
-        es: {
-            "Tzu Chi": "Tzu Chi",
-            "Tzu Chi Logo": "Tzu Chi Logo",
-            "Mapa Tzu Chi": "Mapa Tzu Chi",
-
-            "Inducción para Nuevos Voluntarios":
-                "Inducción para Nuevos Voluntarios",
-
-            "Taller del Club de Docentes Tzu Chi RD":
-                "Taller del Club de Docentes Tzu Chi RD",
-
-            "Tzu Chi lleva amor y solidaridad a Sabana de la Mar":
-                "Tzu Chi lleva amor y solidaridad a Sabana de la Mar",
-
-            "Adultos mayores impulsan el cambio ambiental en Rivera":
-                "Adultos mayores impulsan el cambio ambiental en Rivera",
-
-            "El reciclaje transforma la comunidad de Rivera":
-                "El reciclaje transforma la comunidad de Rivera",
-
-            "Educación que transforma vidas en La Romana":
-                "Educación que transforma vidas en La Romana",
-
-            "Tzu Chi lleva salud y alimentos a Manabao":
-                "Tzu Chi lleva salud y alimentos a Manabao"
+        "Tzu Chi": {
+            es: "Tzu Chi",
+            en: "Tzu Chi",
+            zh: "慈濟"
         },
 
-        en: {
-            "Tzu Chi": "Tzu Chi",
-            "Tzu Chi Logo": "Tzu Chi Logo",
-            "Mapa Tzu Chi": "Tzu Chi Map",
-
-            "Inducción para Nuevos Voluntarios":
-                "Orientation for New Volunteers",
-
-            "Taller del Club de Docentes Tzu Chi RD":
-                "Tzu Chi RD Teachers Club Workshop",
-
-            "Tzu Chi lleva amor y solidaridad a Sabana de la Mar":
-                "Tzu Chi Brings Love and Solidarity to Sabana de la Mar",
-
-            "Adultos mayores impulsan el cambio ambiental en Rivera":
-                "Older Adults Drive Environmental Change in Rivera",
-
-            "El reciclaje transforma la comunidad de Rivera":
-                "Recycling Transforms the Rivera Community",
-
-            "Educación que transforma vidas en La Romana":
-                "Education That Transforms Lives in La Romana",
-
-            "Tzu Chi lleva salud y alimentos a Manabao":
-                "Tzu Chi Brings Healthcare and Food to Manabao"
+        "Tzu Chi Logo": {
+            es: "Tzu Chi Logo",
+            en: "Tzu Chi Logo",
+            zh: "慈濟標誌"
         },
 
-        zh: {
-            "Tzu Chi": "慈濟",
-            "Tzu Chi Logo": "慈濟標誌",
-            "Mapa Tzu Chi": "慈濟地圖",
+        "Mapa Tzu Chi": {
+            es: "Mapa Tzu Chi",
+            en: "Tzu Chi Map",
+            zh: "慈濟地圖"
+        },
 
-            "Inducción para Nuevos Voluntarios":
-                "新志工培訓",
+        "Inducción para Nuevos Voluntarios": {
+            es: "Inducción para Nuevos Voluntarios",
+            en: "Orientation for New Volunteers",
+            zh: "新志工培訓"
+        },
 
-            "Taller del Club de Docentes Tzu Chi RD":
-                "慈濟多明尼加教師聯誼會工作坊",
+        "Taller del Club de Docentes Tzu Chi RD": {
+            es: "Taller del Club de Docentes Tzu Chi RD",
+            en: "Tzu Chi RD Teachers Club Workshop",
+            zh: "慈濟多明尼加教師聯誼會工作坊"
+        },
 
-            "Tzu Chi lleva amor y solidaridad a Sabana de la Mar":
-                "慈濟將愛與關懷帶到薩瓦納德拉馬",
+        "Tzu Chi lleva amor y solidaridad a Sabana de la Mar": {
+            es: "Tzu Chi lleva amor y solidaridad a Sabana de la Mar",
+            en: "Tzu Chi Brings Love and Solidarity to Sabana de la Mar",
+            zh: "慈濟將愛與關懷帶到薩瓦納德拉馬"
+        },
 
-            "Adultos mayores impulsan el cambio ambiental en Rivera":
-                "里韋拉的長者推動環境改變",
+        "Adultos mayores impulsan el cambio ambiental en Rivera": {
+            es: "Adultos mayores impulsan el cambio ambiental en Rivera",
+            en: "Older Adults Drive Environmental Change in Rivera",
+            zh: "里韋拉的長者推動環境改變"
+        },
 
-            "El reciclaje transforma la comunidad de Rivera":
-                "回收改變里韋拉社區",
+        "El reciclaje transforma la comunidad de Rivera": {
+            es: "El reciclaje transforma la comunidad de Rivera",
+            en: "Recycling Transforms the Rivera Community",
+            zh: "回收改變里韋拉社區"
+        },
 
-            "Educación que transforma vidas en La Romana":
-                "改變拉羅馬納生命的教育",
+        "Educación que transforma vidas en La Romana": {
+            es: "Educación que transforma vidas en La Romana",
+            en: "Education That Transforms Lives in La Romana",
+            zh: "改變拉羅馬納生命的教育"
+        },
 
-            "Tzu Chi lleva salud y alimentos a Manabao":
-                "慈濟將醫療與食物帶到馬納包"
+        "Tzu Chi lleva salud y alimentos a Manabao": {
+            es: "Tzu Chi lleva salud y alimentos a Manabao",
+            en: "Tzu Chi Brings Healthcare and Food to Manabao",
+            zh: "慈濟將醫療與食物帶到馬納包"
         }
+
     };
 
 
     document.querySelectorAll("[alt]").forEach(function(element) {
 
-        // Save original ALT permanently
         if (!element.hasAttribute("data-original-alt")) {
-
             element.setAttribute(
                 "data-original-alt",
                 element.getAttribute("alt")
             );
         }
 
-
         const originalAlt =
             element.getAttribute("data-original-alt");
 
-
         if (
-            altTranslations[language] &&
-            altTranslations[language][originalAlt]
+            altTranslations[originalAlt] &&
+            altTranslations[originalAlt][language]
         ) {
-
             element.setAttribute(
                 "alt",
-                altTranslations[language][originalAlt]
+                altTranslations[originalAlt][language]
             );
         }
 
     });
 
 
-    // ========================================================
-    // 4. TRANSLATE TITLE ATTRIBUTES
-    // ========================================================
+    // --------------------------------------------------------
+    // TITLE ATTRIBUTES
+    // --------------------------------------------------------
 
     const titleTranslations = {
 
         "Síguenos en Facebook": {
+            es: "Síguenos en Facebook",
             en: "Follow us on Facebook",
             zh: "在 Facebook 關注我們"
         },
 
         "Síguenos en Instagram": {
+            es: "Síguenos en Instagram",
             en: "Follow us on Instagram",
             zh: "在 Instagram 關注我們"
         },
 
         "Síguenos en YouTube": {
+            es: "Síguenos en YouTube",
             en: "Follow us on YouTube",
             zh: "在 YouTube 關注我們"
         }
+
     };
 
 
     document.querySelectorAll("[title]").forEach(function(element) {
 
-        // Save original title permanently
         if (!element.hasAttribute("data-original-title")) {
-
             element.setAttribute(
                 "data-original-title",
                 element.getAttribute("title")
             );
         }
 
-
         const originalTitle =
             element.getAttribute("data-original-title");
 
-
-        if (language === "es") {
-
-            element.setAttribute(
-                "title",
-                originalTitle
-            );
-
-        }
-        else if (
+        if (
             titleTranslations[originalTitle] &&
             titleTranslations[originalTitle][language]
         ) {
-
             element.setAttribute(
                 "title",
                 titleTranslations[originalTitle][language]
             );
-
         }
 
     });
 
 
-    // ========================================================
-    // 5. TRANSLATE FORM PLACEHOLDERS
-    // ========================================================
+    // --------------------------------------------------------
+    // PLACEHOLDERS
+    // --------------------------------------------------------
 
     const placeholderTranslations = {
 
         "Nombre": {
+            es: "Nombre",
             en: "Name",
             zh: "姓名"
         },
 
         "Correo Electrónico": {
+            es: "Correo Electrónico",
             en: "Email Address",
             zh: "電子郵件"
         },
 
         "Mensaje": {
+            es: "Mensaje",
             en: "Message",
             zh: "訊息"
         }
+
     };
 
 
     document.querySelectorAll("[placeholder]").forEach(function(element) {
 
-        // Save original placeholder permanently
         if (!element.hasAttribute("data-original-placeholder")) {
-
             element.setAttribute(
                 "data-original-placeholder",
                 element.getAttribute("placeholder")
             );
         }
 
-
         const originalPlaceholder =
             element.getAttribute("data-original-placeholder");
 
-
-        if (language === "es") {
-
-            element.setAttribute(
-                "placeholder",
-                originalPlaceholder
-            );
-
-        }
-        else if (
+        if (
             placeholderTranslations[originalPlaceholder] &&
             placeholderTranslations[originalPlaceholder][language]
         ) {
-
             element.setAttribute(
                 "placeholder",
                 placeholderTranslations[originalPlaceholder][language]
             );
-
         }
 
     });
 
 
-    // ========================================================
-    // 6. UPDATE HTML LANGUAGE
-    // ========================================================
+    // --------------------------------------------------------
+    // HTML LANGUAGE
+    // --------------------------------------------------------
 
     document.documentElement.lang =
         language === "zh"
@@ -979,24 +929,19 @@ function translatePage(language) {
             : language;
 
 
-    // ========================================================
-    // 7. HIGHLIGHT ACTIVE LANGUAGE
-    // ========================================================
+    // --------------------------------------------------------
+    // ACTIVE LANGUAGE
+    // --------------------------------------------------------
 
     document.querySelectorAll("[data-lang-selector]").forEach(function(button) {
 
-        if (
-            button.getAttribute("data-lang-selector") === language
-        ) {
+        const buttonLanguage =
+            button.getAttribute("data-lang-selector");
 
-            button.style.fontWeight = "bold";
-
-        }
-        else {
-
-            button.style.fontWeight = "normal";
-
-        }
+        button.style.fontWeight =
+            buttonLanguage === language
+                ? "bold"
+                : "normal";
 
     });
 
@@ -1004,65 +949,56 @@ function translatePage(language) {
 
 
 // ============================================================
-// LANGUAGE BUTTONS
+// INITIALIZE
 // ============================================================
 
 document.addEventListener("DOMContentLoaded", function() {
 
-    // --------------------------------------------------------
-    // Get saved language FIRST
-    // --------------------------------------------------------
-
     const savedLanguage =
         localStorage.getItem("tzuChiLanguage");
 
-
     const initialLanguage =
-        savedLanguage &&
-        translations[savedLanguage]
+        savedLanguage && translations[savedLanguage]
             ? savedLanguage
             : "es";
 
-
-    // --------------------------------------------------------
-    // Initial translation
-    // --------------------------------------------------------
 
     translatePage(initialLanguage);
 
 
     // --------------------------------------------------------
-    // Language buttons
+    // LANGUAGE BUTTONS
     // --------------------------------------------------------
 
-    document.querySelectorAll("[data-lang-selector]").forEach(function(button) {
+    document.addEventListener("click", function(event) {
 
-        button.addEventListener("click", function(event) {
+        const button =
+            event.target.closest("[data-lang-selector]");
 
-            event.preventDefault();
+        if (!button) {
+            return;
+        }
 
-
-            const language =
-                button.getAttribute("data-lang-selector");
-
-
-            // Make sure the language exists
-            if (!translations[language]) {
-                return;
-            }
+        event.preventDefault();
+        event.stopPropagation();
 
 
-            // Translate FROM THE ORIGINAL SPANISH TEXT
-            translatePage(language);
+        const language =
+            button.getAttribute("data-lang-selector");
 
 
-            // Save selected language
-            localStorage.setItem(
-                "tzuChiLanguage",
-                language
-            );
+        if (!translations[language]) {
+            return;
+        }
 
-        });
+
+        translatePage(language);
+
+
+        localStorage.setItem(
+            "tzuChiLanguage",
+            language
+        );
 
     });
 
