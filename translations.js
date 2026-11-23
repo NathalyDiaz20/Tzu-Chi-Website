@@ -35,6 +35,11 @@ const translations = {
         "En Tzu Chi RD servimos a nuestras comunidades con compasión, amor y acción humanitaria.": "En Tzu Chi RD servimos a nuestras comunidades con compasión, amor y acción humanitaria.",
 
         "Conoce más": "Conoce más",
+        "founder.eyebrow": "Nuestra fundadora",
+        "founder.title": "Maestra Cheng Yen",
+        "founder.desc": "En 1966, la Maestra Cheng Yen fundó Tzu Chi con un propósito sencillo y profundo: transformar la compasión en acciones concretas que alivien el sufrimiento y eleven el espíritu de quienes ayudan y reciben ayuda.",
+        "founder.link": "Conoce su historia",
+        "founder.caption": "Fundadora de la Fundación Budista Tzu Chi",
 
         "Fundada sobre los principios de sinceridad, integridad, confianza y honestidad, la Fundación Budista Tzu Chi es una organización humanitaria internacional dedicada a aliviar el sufrimiento en todo el mundo.":
         "Fundada sobre los principios de sinceridad, integridad, confianza y honestidad, la Fundación Budista Tzu Chi es una organización humanitaria internacional dedicada a aliviar el sufrimiento en todo el mundo.",
@@ -83,6 +88,26 @@ const translations = {
         "Continuamos expandiendo nuestro impacto a través de programas de salud, educación, reciclaje y ayuda comunitaria en todo el país.":
         "Continuamos expandiendo nuestro impacto a través de programas de salud, educación, reciclaje y ayuda comunitaria en todo el país.",
 
+        "section4.eyebrow": "28 años de servicio",
+        "section4.subtitle": "Explora los hitos que han formado el compromiso de Tzu Chi con la educación, la salud y la esperanza en República Dominicana.",
+        "section4.t1": "Llegada a República Dominicana",
+        "section4.d1": "Tzu Chi inicia su misión en el país tras el Huracán Georges.",
+        "section4.t2": "Construcción de la Escuela Primaria",
+        "section4.d2": "Inicia la construcción de la escuela primaria Tzu Chi en La Romana.",
+        "section4.t3": "Primera graduación primaria",
+        "section4.d3": "Se celebra la primera graduación de la Escuela Primaria Tzu Chi.",
+        "section4.t4": "Educación Básica para Adultos",
+        "section4.d4": "Expansión educativa para adultos con oportunidades de superación.",
+        "section4.t5": "Comida caliente en La Romana",
+        "section4.d5": "Programa continuo de alimentación para personas mayores y necesitadas.",
+        "section4.t6": "Respuesta ante el COVID-19",
+        "section4.d6": "Entrega de insumos de protección sanitaria a comunidades vulnerables.",
+        "section4.t7": "Operativo dental bimestral",
+        "section4.d7": "Se reinicia el operativo dental bimestral en beneficio de la comunidad.",
+        "section4.t8": "Expansión escolar completa",
+        "section4.d8": "Creación de la Escuela Primaria y la Escuela Secundaria Tzu Chi La Romana.",
+        "section4.t9": "Alianza estratégica",
+        "section4.d9": "Firma de convenio con la Universidad UTECO y Fundación Jiminian.",
         "Eventos Recientes": "Eventos Recientes",
         "Ver todos": "Ver todos",
 
@@ -104,16 +129,16 @@ const translations = {
 
         "Noticias e Historias": "Noticias e Historias",
 
-        "Adultos mayores impulsan el cambio ambiental en Rivera":
-        "Adultos mayores impulsan el cambio ambiental en Rivera",
+        "Adultos mayores impulsan el cambio ambiental en Los Ríos":
+        "Adultos mayores impulsan el cambio ambiental en Los Ríos",
 
-        "En Rivera, Santo Domingo, cientos de adultos mayores han convertido el reciclaje en una forma de proteger su comunidad, apoyar a otras personas y fortalecer los lazos entre vecinos.":
-        "En Rivera, Santo Domingo, cientos de adultos mayores han convertido el reciclaje en una forma de proteger su comunidad, apoyar a otras personas y fortalecer los lazos entre vecinos.",
+        "En Los Ríos, Santo Domingo, cientos de adultos mayores han convertido el reciclaje en una forma de proteger su comunidad, apoyar a otras personas y fortalecer los lazos entre vecinos.":
+        "En Los Ríos, Santo Domingo, cientos de adultos mayores han convertido el reciclaje en una forma de proteger su comunidad, apoyar a otras personas y fortalecer los lazos entre vecinos.",
 
         "Leer historia completa": "Leer historia completa",
 
-        "El reciclaje transforma la comunidad de Rivera":
-        "El reciclaje transforma la comunidad de Rivera",
+        "El reciclaje transforma la comunidad de Los Ríos":
+        "El reciclaje transforma la comunidad de Los Ríos",
 
         "Educación que transforma vidas en La Romana":
         "Educación que transforma vidas en La Romana",
@@ -167,839 +192,744 @@ const translations = {
         "Compasión en acción. Aliviando el sufrimiento y trayendo esperanza a las comunidades de la República Dominicana a través del amor y el servicio desinteresado.",
 
         "© 2026 Fundación Budista Tzu Chi República Dominicana. Todos los derechos reservados.":
-        "© 2026 Fundación Budista Tzu Chi República Dominicana. Todos los derechos reservados."
-    },
+        "© 2026 Fundación Budista Tzu Chi República Dominicana. Todos los derechos reservados.",
 
+        "section5.date1": "16 NOVIEMBRE, 2026",
+        "section5.title1": "Taller Infantil del Espacio Tzu Chi-Los Ríos",
+        "section5.desc1": "Cada sábado, niños y niñas participan en actividades creativas con materiales reciclables y aprenden valores de bondad, respeto y cuidado del medio ambiente.",
+        "section5.link1": "Ver en Facebook",
+        "section5.date2": "16 OCTUBRE, 2026",
+        "section5.title2": "Plan Lea fortalece el liderazgo educativo",
+        "section5.desc2": "Tzu Chi y Plan Lea realizaron una masterclass de liderazgo con distinción y distribuyeron Aforismos Jing Si a los 18 distritos educativos.",
+        "section5.link2": "Ver en Facebook",
+        "section5.date3": "12 OCTUBRE, 2026",
+        "section5.title3": "Tzu Chi apoya a familias en Monte Plata",
+        "section5.desc3": "El operativo benefició a 617 familias vulnerables en Los Guineos, La Pista y La Altagracia, con la participación de 56 voluntarios.",
+        "section5.link3": "Ver en Facebook",
+
+        "Las 4 Misiones y 8 Huellas": "Nuestras Misiones y sus Huellas en el Mundo",
+        "Cuatro misiones fundamentales dan origen a ocho huellas de acción con las que Tzu Chi sirve y transforma a las comunidades.":
+        "Cuatro misiones fundamentales dan origen a ocho huellas de acción con las que Tzu Chi sirve y transforma a las comunidades.",
+        "section2.mission": "MISIÓN",
+        "section2.footprint": "Huella",
+        "section2.charity": "Caridad",
+        "section2.charityDesc": "Ayuda directa y acompañamiento a familias y comunidades vulnerables.",
+        "section2.charityDirect": "Caridad comunitaria",
+        "section2.international": "Ayuda humanitaria internacional",
+        "section2.medicine": "Medicina",
+        "section2.medicineDesc": "Atención médica gratuita y prevención que protegen la salud humana.",
+        "section2.outreach": "Jornadas médicas comunitarias",
+        "section2.marrow": "Donación de médula ósea",
+        "section2.education": "Educación",
+        "section2.educationDesc": "Formación académica y de valores para cultivar personas conscientes.",
+        "section2.educationSchool": "Educación y escuelas Tzu Chi",
+        "section2.environment": "Protección del medio ambiente",
+        "section2.culture": "Cultura Humanista",
+        "section2.cultureDesc": "Difusión de valores que promueven paz, gratitud y armonía social.",
+        "section2.humanism": "Cultura humanista y difusión de valores",
+        "section2.community": "Voluntariado comunitario",
+
+        "Eventos Recientes": "Eventos Recientes",
+        "Ver todos": "Ver todos",
+
+        "31 ENERO, 2026": "31 ENERO, 2026",
+        "19 JUNIO, 2026": "19 JUNIO, 2026",
+        "12 JULIO, 2026": "12 JULIO, 2026",
+
+        "Inducción para Nuevos Voluntarios": "Inducción para Nuevos Voluntarios",
+        "Una jornada especial en Sabana Grande de Boyá para nuevos voluntarios que desean comenzar su camino de servicio con Tzu Chi.":
+        "Una jornada especial en Sabana Grande de Boyá para nuevos voluntarios que desean comenzar su camino de servicio con Tzu Chi.",
+
+        "Taller del Club de Docentes Tzu Chi RD": "Taller del Club de Docentes Tzu Chi RD",
+        "Primer taller de capacitación del Club de Docentes Tzu Chi RD, enfocado en fortalecer a quienes educan y acompañan a las nuevas generaciones.":
+        "Primer taller de capacitación del Club de Docentes Tzu Chi RD, enfocado en fortalecer a quienes educan y acompañan a las nuevas generaciones.",
+
+        "Tzu Chi lleva amor y solidaridad a Sabana de la Mar": "Tzu Chi lleva amor y solidaridad a Sabana de la Mar",
+        "Una jornada de ayuda y solidaridad llevó el apoyo de Tzu Chi a familias de Sabana de la Mar.":
+        "Una jornada de ayuda y solidaridad llevó el apoyo de Tzu Chi a familias de Sabana de la Mar.",
+
+        "Noticias e Historias": "Noticias e Historias",
+
+        "Adultos mayores impulsan el cambio ambiental en Los Ríos":
+        "Adultos mayores impulsan el cambio ambiental en Los Ríos",
+
+        "En Los Ríos, Santo Domingo, cientos de adultos mayores han convertido el reciclaje en una forma de proteger su comunidad, apoyar a otras personas y fortalecer los lazos entre vecinos.":
+        "En Los Ríos, Santo Domingo, cientos de adultos mayores han convertido el reciclaje en una forma de proteger su comunidad, apoyar a otras personas y fortalecer los lazos entre vecinos.",
+
+        "Leer historia completa": "Leer historia completa",
+
+        "El reciclaje transforma la comunidad de Los Ríos":
+        "El reciclaje transforma la comunidad de Los Ríos",
+
+        "Educación que transforma vidas en La Romana":
+        "Educación que transforma vidas en La Romana",
+
+        "Tzu Chi lleva salud y alimentos a Manabao":
+        "Tzu Chi lleva salud y alimentos a Manabao",
+
+        "9 marzo, 2026": "9 marzo, 2026",
+        "29 mayo, 2025": "29 mayo, 2025",
+        "14 agosto, 2025": "14 agosto, 2025",
+
+        "Nuestro Impacto": "Nuestro Impacto",
+        "Beneficiarios": "Beneficiarios",
+        "Voluntarios": "Voluntarios",
+        "Actividades Anuales": "Actividades Anuales",
+        "Comunidades Atendidas": "Comunidades Atendidas",
+
+        "Tu tiempo puede transformar una vida":
+        "Tu tiempo puede transformar una vida",
+
+        "Únete a nuestra red de compasión. Cada pequeño esfuerzo cuenta cuando se suma al de miles de corazones dispuestos a servir.":
+        "Únete a nuestra red de compasión. Cada pequeño esfuerzo cuenta cuando se suma al de miles de corazones dispuestos a servir.",
+
+        "Convertirme en Voluntario": "Convertirme en Voluntario",
+
+        "Tu donación puede convertirse en esperanza":
+        "Tu donación puede convertirse en esperanza",
+
+        "Con tu aporte económico nos ayudas a llevar alimentos, medicinas, educación y socorro a quienes más lo necesitan en la República Dominicana.":
+        "Con tu aporte económico nos ayudas a llevar alimentos, medicinas, educación y socorro a quienes más lo necesitan en la República Dominicana.",
+
+        "Hacer una Donación": "Hacer una Donación",
+
+        "Calle La Plaza No 3, Renacimiento":
+        "Calle La Plaza No 3, Renacimiento",
+
+        "Envíanos un mensaje": "Envíanos un mensaje",
+        "Nombre": "Nombre",
+        "Correo Electrónico": "Correo Electrónico",
+        "Mensaje": "Mensaje",
+        "Enviar Mensaje": "Enviar Mensaje",
+
+        "Enlaces": "Enlaces",
+        "Política de Privacidad": "Política de Privacidad",
+
+        "Contacto": "Contacto",
+        "Santo Domingo, República Dominicana":
+        "Santo Domingo, República Dominicana",
+
+        "Compasión en acción. Aliviando el sufrimiento y trayendo esperanza a las comunidades de la República Dominicana a través del amor y el servicio desinteresado.":
+        "Compasión en acción. Aliviando el sufrimiento y trayendo esperanza a las comunidades de la República Dominicana a través del amor y el servicio desinteresado.",
+
+        "© 2026 Fundación Budista Tzu Chi República Dominicana. Todos los derechos reservados.":
+        "© 2026 Fundación Budista Tzu Chi República Dominicana. Todos los derechos reservados.",
+
+        "section5.date1": "16 NOVIEMBRE, 2026",
+        "section5.title1": "Taller Infantil del Espacio Tzu Chi-Los Ríos",
+        "section5.desc1": "Cada sábado, niños y niñas participan en actividades creativas con materiales reciclables y aprenden valores de bondad, respeto y cuidado del medio ambiente.",
+        "section5.link1": "Ver en Facebook",
+        "section5.date2": "16 OCTUBRE, 2026",
+        "section5.title2": "Plan Lea fortalece el liderazgo educativo",
+        "section5.desc2": "Tzu Chi y Plan Lea realizaron una masterclass de liderazgo con distinción y distribuyeron Aforismos Jing Si a los 18 distritos educativos.",
+        "section5.link2": "Ver en Facebook",
+        "section5.date3": "12 OCTUBRE, 2026",
+        "section5.title3": "Tzu Chi apoya a familias en Monte Plata",
+        "section5.desc3": "El operativo benefició a 617 familias vulnerables en Los Guineos, La Pista y La Altagracia, con la participación de 56 voluntarios.",
+        "section5.link3": "Ver en Facebook",
+
+        "Las 4 Misiones y 8 Huellas": "Nuestras Misiones y sus Huellas en el Mundo",
+        "Cuatro misiones fundamentales dan origen a ocho huellas de acción con las que Tzu Chi sirve y transforma a las comunidades.":
+        "Cuatro misiones fundamentales dan origen a ocho huellas de acción con las que Tzu Chi sirve y transforma a las comunidades.",
+        "section2.mission": "MISIÓN",
+        "section2.footprint": "Huella",
+        "section2.charity": "Caridad",
+        "section2.charityDesc": "Ayuda directa y acompañamiento a familias y comunidades vulnerables.",
+        "section2.charityDirect": "Caridad comunitaria",
+        "section2.international": "Ayuda humanitaria internacional",
+        "section2.medicine": "Medicina",
+        "section2.medicineDesc": "Atención médica gratuita y prevención que protegen la salud humana.",
+        "section2.outreach": "Jornadas médicas comunitarias",
+        "section2.marrow": "Donación de médula ósea",
+        "section2.education": "Educación",
+        "section2.educationDesc": "Formación académica y de valores para cultivar personas conscientes.",
+        "section2.educationSchool": "Educación y escuelas Tzu Chi",
+        "section2.environment": "Protección del medio ambiente",
+        "section2.culture": "Cultura Humanista",
+        "section2.cultureDesc": "Difusión de valores que promueven paz, gratitud y armonía social.",
+        "section2.humanism": "Cultura humanista y difusión de valores",
+        "section2.community": "Voluntariado comunitario",
+
+        "Eventos Recientes": "Eventos Recientes",
+        "Ver todos": "Ver todos",
+
+        "31 ENERO, 2026": "31 ENERO, 2026",
+        "19 JUNIO, 2026": "19 JUNIO, 2026",
+        "12 JULIO, 2026": "12 JULIO, 2026",
+
+        "Inducción para Nuevos Voluntarios": "Inducción para Nuevos Voluntarios",
+        "Una jornada especial en Sabana Grande de Boyá para nuevos voluntarios que desean comenzar su camino de servicio con Tzu Chi.":
+        "Una jornada especial en Sabana Grande de Boyá para nuevos voluntarios que desean comenzar su camino de servicio con Tzu Chi.",
+
+        "Taller del Club de Docentes Tzu Chi RD": "Taller del Club de Docentes Tzu Chi RD",
+        "Primer taller de capacitación del Club de Docentes Tzu Chi RD, enfocado en fortalecer a quienes educan y acompañan a las nuevas generaciones.":
+        "Primer taller de capacitación del Club de Docentes Tzu Chi RD, enfocado en fortalecer a quienes educan y acompañan a las nuevas generaciones.",
+
+        "Tzu Chi lleva amor y solidaridad a Sabana de la Mar": "Tzu Chi lleva amor y solidaridad a Sabana de la Mar",
+        "Una jornada de ayuda y solidaridad llevó el apoyo de Tzu Chi a familias de Sabana de la Mar.":
+        "Una jornada de ayuda y solidaridad llevó el apoyo de Tzu Chi a familias de Sabana de la Mar.",
+
+        "Noticias e Historias": "Noticias e Historias",
+
+        "Adultos mayores impulsan el cambio ambiental en Los Ríos":
+        "Adultos mayores impulsan el cambio ambiental en Los Ríos",
+
+        "En Los Ríos, Santo Domingo, cientos de adultos mayores han convertido el reciclaje en una forma de proteger su comunidad, apoyar a otras personas y fortalecer los lazos entre vecinos.":
+        "En Los Ríos, Santo Domingo, cientos de adultos mayores han convertido el reciclaje en una forma de proteger su comunidad, apoyar a otras personas y fortalecer los lazos entre vecinos.",
+
+        "Leer historia completa": "Leer historia completa",
+
+        "El reciclaje transforma la comunidad de Los Ríos":
+        "El reciclaje transforma la comunidad de Los Ríos",
+
+        "Educación que transforma vidas en La Romana":
+        "Educación que transforma vidas en La Romana",
+
+        "Tzu Chi lleva salud y alimentos a Manabao":
+        "Tzu Chi lleva salud y alimentos a Manabao",
+
+        "9 marzo, 2026": "9 marzo, 2026",
+        "29 mayo, 2025": "29 mayo, 2025",
+        "14 agosto, 2025": "14 agosto, 2025",
+
+        "Nuestro Impacto": "Nuestro Impacto",
+        "Beneficiarios": "Beneficiarios",
+        "Voluntarios": "Voluntarios",
+        "Actividades Anuales": "Actividades Anuales",
+        "Comunidades Atendidas": "Comunidades Atendidas",
+
+        "Tu tiempo puede transformar una vida":
+        "Tu tiempo puede transformar una vida",
+
+        "Únete a nuestra red de compasión. Cada pequeño esfuerzo cuenta cuando se suma al de miles de corazones dispuestos a servir.":
+        "Únete a nuestra red de compasión. Cada pequeño esfuerzo cuenta cuando se suma al de miles de corazones dispuestos a servir.",
+
+        "Convertirme en Voluntario": "Convertirme en Voluntario",
+
+        "Tu donación puede convertirse en esperanza":
+        "Tu donación puede convertirse en esperanza",
+
+        "Con tu aporte económico nos ayudas a llevar alimentos, medicinas, educación y socorro a quienes más lo necesitan en la República Dominicana.":
+        "Con tu aporte económico nos ayudas a llevar alimentos, medicinas, educación y socorro a quienes más lo necesitan en la República Dominicana.",
+
+        "Hacer una Donación": "Hacer una Donación",
+
+        "Calle La Plaza No 3, Renacimiento":
+        "Calle La Plaza No 3, Renacimiento",
+
+        "Envíanos un mensaje": "Envíanos un mensaje",
+        "Nombre": "Nombre",
+        "Correo Electrónico": "Correo Electrónico",
+        "Mensaje": "Mensaje",
+        "Enviar Mensaje": "Enviar Mensaje",
+
+        "Enlaces": "Enlaces",
+        "Política de Privacidad": "Política de Privacidad",
+
+        "Contacto": "Contacto",
+        "Santo Domingo, República Dominicana":
+        "Santo Domingo, República Dominicana",
+
+        "Compasión en acción. Aliviando el sufrimiento y trayendo esperanza a las comunidades de la República Dominicana a través del amor y el servicio desinteresado.":
+        "Compasión en acción. Aliviando el sufrimiento y trayendo esperanza a las comunidades de la República Dominicana a través del amor y el servicio desinteresado.",
+
+        "© 2026 Fundación Budista Tzu Chi República Dominicana. Todos los derechos reservados.":
+        "© 2026 Fundación Budista Tzu Chi República Dominicana. Todos los derechos reservados.",
+
+        "section5.date1": "16 NOVIEMBRE, 2026",
+        "section5.title1": "Taller Infantil del Espacio Tzu Chi-Los Ríos",
+        "section5.desc1": "Cada sábado, niños y niñas participan en actividades creativas con materiales reciclables y aprenden valores de bondad, respeto y cuidado del medio ambiente.",
+        "section5.link1": "Ver en Facebook",
+        "section5.date2": "16 OCTUBRE, 2026",
+        "section5.title2": "Plan Lea fortalece el liderazgo educativo",
+        "section5.desc2": "Tzu Chi y Plan Lea realizaron una masterclass de liderazgo con distinción y distribuyeron Aforismos Jing Si a los 18 distritos educativos.",
+        "section5.link2": "Ver en Facebook",
+        "section5.date3": "12 OCTUBRE, 2026",
+        "section5.title3": "Tzu Chi apoya a familias en Monte Plata",
+        "section5.desc3": "El operativo benefició a 617 familias vulnerables en Los Guineos, La Pista y La Altagracia, con la participación de 56 voluntarios.",
+        "section5.link3": "Ver en Facebook",
+
+        "Las 4 Misiones y 8 Huellas": "Nuestras Misiones y sus Huellas en el Mundo",
+        "Cuatro misiones fundamentales dan origen a ocho huellas de acción con las que Tzu Chi sirve y transforma a las comunidades.":
+        "Cuatro misiones fundamentales dan origen a ocho huellas de acción con las que Tzu Chi sirve y transforma a las comunidades.",
+        "section2.mission": "MISIÓN",
+        "section2.footprint": "Huella",
+        "section2.charity": "Caridad",
+        "section2.charityDesc": "Ayuda directa y acompañamiento a familias y comunidades vulnerables.",
+        "section2.charityDirect": "Caridad comunitaria",
+        "section2.international": "Ayuda humanitaria internacional",
+        "section2.medicine": "Medicina",
+        "section2.medicineDesc": "Atención médica gratuita y prevención que protegen la salud humana.",
+        "section2.outreach": "Jornadas médicas comunitarias",
+        "section2.marrow": "Donación de médula ósea",
+        "section2.education": "Educación",
+        "section2.educationDesc": "Formación académica y de valores para cultivar personas conscientes.",
+        "section2.educationSchool": "Educación y escuelas Tzu Chi",
+        "section2.environment": "Protección del medio ambiente",
+        "section2.culture": "Cultura Humanista",
+        "section2.cultureDesc": "Difusión de valores que promueven paz, gratitud y armonía social.",
+        "section2.humanism": "Cultura humanista y difusión de valores",
+        "section2.community": "Voluntariado comunitario",
+    },
 
     // ============================================================
     // ENGLISH
     // ============================================================
     en: {
 
-        "Fundación Budista Tzu Chi RD": "Tzu Chi Buddhist Foundation RD",
+        "Tzu Chi Foundation DR": "Tzu Chi Foundation DR",
         "Global": "Global",
-        "Tienda Jing Si": "Jing Si Store",
+        "Jing Si Shop": "Jing Si Shop",
         "Da Ai TV": "Da Ai TV",
-        "Español": "Spanish",
+        "Spanish": "Spanish",
         "English": "English",
-        "中文": "Chinese",
-        "Contáctenos": "Contact Us",
+        "中文": "中文",
+        "Contact Us": "Contact Us",
 
-        "Quiénes Somos": "Who We Are",
-        "Qué Hacemos": "What We Do",
-        "Nuestros Valores": "Our Values",
-        "Llegada a RD": "Our Arrival in the Dominican Republic",
-        "Eventos": "Events",
+        "Who We Are": "Who We Are",
+        "What We Do": "What We Do",
+        "Our Values": "Our Values",
+        "Arrival in DR": "Arrival in DR",
+        "Events": "Events",
 
-        "Unirme como Voluntario": "Become a Volunteer",
-        "Hacer Donación": "Make a Donation",
+        "Join as a Volunteer": "Join as a Volunteer",
+        "Make a Donation": "Make a Donation",
 
-        "Menú Principal": "Main Menu",
+        "Main Menu": "Main Menu",
 
-        "República Dominicana": "Dominican Republic",
-        "Sembrando compasión, transformando vidas.": "Planting compassion, transforming lives.",
-        "En Tzu Chi RD servimos a nuestras comunidades con compasión, amor y acción humanitaria.":
-        "At Tzu Chi RD, we serve our communities with compassion, love, and humanitarian action.",
+        "Dominican Republic": "Dominican Republic",
+        "Sowing compassion, transforming lives.": "Sowing compassion, transforming lives.",
+        "At Tzu Chi DR we serve our communities with compassion, love, and humanitarian action.": "At Tzu Chi DR we serve our communities with compassion, love, and humanitarian action.",
 
-        "Conoce más": "Learn More",
+        "Learn more": "Learn more",
+        "founder.eyebrow": "Our Founder",
+        "founder.title": "Dharma Master Cheng Yen",
+        "founder.desc": "In 1966, Dharma Master Cheng Yen founded Tzu Chi with a simple and profound purpose: to turn compassion into concrete actions that relieve suffering and uplift the spirit of both giver and recipient.",
+        "founder.link": "Learn Her Story",
+        "founder.caption": "Founder of the Tzu Chi Buddhist Foundation",
 
-        "Fundada sobre los principios de sinceridad, integridad, confianza y honestidad, la Fundación Budista Tzu Chi es una organización humanitaria internacional dedicada a aliviar el sufrimiento en todo el mundo.":
-        "Founded on the principles of sincerity, integrity, trust, and honesty, the Tzu Chi Buddhist Foundation is an international humanitarian organization dedicated to relieving suffering around the world.",
+        "Founded on the principles of sincerity, integrity, trust, and honesty, the Tzu Chi Buddhist Foundation is an international humanitarian organization dedicated to relieving suffering worldwide.":
+        "Founded on the principles of sincerity, integrity, trust, and honesty, the Tzu Chi Buddhist Foundation is an international humanitarian organization dedicated to relieving suffering worldwide.",
 
-        "Caridad": "Charity",
-        "Asistencia directa a familias y comunidades vulnerables.":
-        "Direct assistance to vulnerable families and communities.",
+        "Charity": "Charity",
+        "Direct assistance to vulnerable families and communities.": "Direct assistance to vulnerable families and communities.",
 
-        "Medicina": "Medicine",
-        "Atención médica gratuita y jornadas de salud preventivas.":
-        "Free medical care and preventive health campaigns.",
+        "Medicine": "Medicine",
+        "Free medical care and preventive health campaigns.": "Free medical care and preventive health campaigns.",
 
-        "Educación": "Education",
-        "Fomentando valores y brindando oportunidades educativas.":
-        "Promoting values and providing educational opportunities.",
+        "Education": "Education",
+        "Fostering values and providing educational opportunities.": "Fostering values and providing educational opportunities.",
 
-        "Ayuda Humanitaria": "Humanitarian Aid",
-        "Respuesta integral a las necesidades humanas fundamentales.":
-        "Comprehensive responses to fundamental human needs.",
+        "Humanitarian Aid": "Humanitarian Aid",
+        "Comprehensive response to fundamental human needs.": "Comprehensive response to fundamental human needs.",
 
-        "Socorro": "Disaster Relief",
-        "Asistencia inmediata y reconstrucción en zonas de desastre.":
-        "Immediate assistance and reconstruction in disaster-affected areas.",
+        "Relief": "Relief",
+        "Immediate assistance and reconstruction in disaster areas.": "Immediate assistance and reconstruction in disaster areas.",
 
-        "Medio Ambiente": "Environment",
-        "Protección del planeta a través del reciclaje y la educación.":
-        "Protecting the planet through recycling and environmental education.",
+        "Environment": "Environment",
+        "Protecting the planet through recycling and education.": "Protecting the planet through recycling and education.",
 
-        "Cultura": "Culture",
-        "Promoviendo la paz y la armonía social a través del humanismo.":
-        "Promoting peace and social harmony through humanism.",
+        "Culture": "Culture",
+        "Promoting peace and social harmony through humanism.": "Promoting peace and social harmony through humanism.",
 
-        "Voluntariado": "Volunteering",
-        "Movilizando el amor compasivo en las comunidades locales.":
-        "Mobilizing compassionate love within local communities.",
+        "Volunteering": "Volunteering",
+        "Mobilizing compassionate love in local communities.": "Mobilizing compassionate love in local communities.",
 
-        "Gratitud": "Gratitude",
-        "Respeto": "Respect",
-        "Amor": "Love",
-        "Compasión": "Compassion",
-        "Servicio": "Service",
+        "Gratitude": "Gratitude",
+        "Respect": "Respect",
+        "Love": "Love",
+        "Compassion": "Compassion",
+        "Service": "Service",
 
-        "Nuestra Historia en RD": "Our History in the Dominican Republic",
+        "Our Story in DR": "Our Story in DR",
 
         "1998": "1998",
-        "Llegada inicial en respuesta al Huracán Georges, marcando el inicio de la misión de Tzu Chi en la República Dominicana.":
+        "Initial arrival in response to Hurricane Georges, marking the beginning of Tzu Chi's mission in the Dominican Republic.":
         "Initial arrival in response to Hurricane Georges, marking the beginning of Tzu Chi's mission in the Dominican Republic.",
 
         "2000": "2000",
-        "Inauguración de la Escuela Tzu Chi en La Romana, brindando educación de calidad a cientos de niños de escasos recursos.":
-        "Opening of the Tzu Chi School in La Romana, providing quality education to hundreds of children from low-income families.",
+        "Inauguration of the Tzu Chi School in La Romana, providing quality education to hundreds of underprivileged children.":
+        "Inauguration of the Tzu Chi School in La Romana, providing quality education to hundreds of underprivileged children.",
 
-        "Hoy": "Today",
-        "Continuamos expandiendo nuestro impacto a través de programas de salud, educación, reciclaje y ayuda comunitaria en todo el país.":
-        "We continue expanding our impact through health, education, recycling, and community assistance programs throughout the country.",
+        "Today": "Today",
+        "We continue to expand our impact through health, education, recycling, and community assistance programs across the country.":
+        "We continue to expand our impact through health, education, recycling, and community assistance programs across the country.",
 
-        "Eventos Recientes": "Recent Events",
-        "Ver todos": "View All",
+        "section4.eyebrow": "28 years of service",
+        "section4.subtitle": "Explore the milestones that have shaped Tzu Chi's commitment to education, health, and hope in the Dominican Republic.",
+        "section4.t1": "Arrival in the Dominican Republic",
+        "section4.d1": "Tzu Chi begins its mission in the country after Hurricane Georges.",
+        "section4.t2": "Construction of the Primary School",
+        "section4.d2": "Construction of the Tzu Chi primary school in La Romana begins.",
+        "section4.t3": "First primary graduation",
+        "section4.d3": "The first graduation of the Tzu Chi Primary School is celebrated.",
+        "section4.t4": "Basic Education for Adults",
+        "section4.d4": "Educational expansion for adults with opportunities for advancement.",
+        "section4.t5": "Hot meals in La Romana",
+        "section4.d5": "Ongoing feeding program for the elderly and needy.",
+        "section4.t6": "Response to COVID-19",
+        "section4.d6": "Delivery of sanitary protection supplies to vulnerable communities.",
+        "section4.t7": "Bi-monthly dental operation",
+        "section4.d7": "The bi-monthly dental operation is restarted for the benefit of the community.",
+        "section4.t8": "Complete school expansion",
+        "section4.d8": "Creation of the Tzu Chi Primary and Secondary School La Romana.",
+        "section4.t9": "Strategic alliance",
+        "section4.d9": "Signing of an agreement with UTECO University and Jiminian Foundation.",
+        "Recent Events": "Recent Events",
+        "View all": "View all",
 
-        "31 ENERO, 2026": "JANUARY 31, 2026",
-        "19 JUNIO, 2026": "JUNE 19, 2026",
-        "12 JULIO, 2026": "JULY 12, 2026",
+        "JANUARY 31, 2026": "JANUARY 31, 2026",
+        "JUNE 19, 2026": "JUNE 19, 2026",
+        "JULY 12, 2026": "JULY 12, 2026",
 
-        "Inducción para Nuevos Voluntarios": "Orientation for New Volunteers",
-        "Una jornada especial en Sabana Grande de Boyá para nuevos voluntarios que desean comenzar su camino de servicio con Tzu Chi.":
-        "A special day in Sabana Grande de Boyá for new volunteers who wish to begin their journey of service with Tzu Chi.",
+        "Orientation for New Volunteers": "Orientation for New Volunteers",
+        "A special day in Sabana Grande de Boyá for new volunteers who wish to begin their service journey with Tzu Chi.":
+        "A special day in Sabana Grande de Boyá for new volunteers who wish to begin their service journey with Tzu Chi.",
 
-        "Taller del Club de Docentes Tzu Chi RD": "Tzu Chi RD Teachers Club Workshop",
-        "Primer taller de capacitación del Club de Docentes Tzu Chi RD, enfocado en fortalecer a quienes educan y acompañan a las nuevas generaciones.":
-        "The first training workshop of the Tzu Chi RD Teachers Club, focused on strengthening those who educate and guide future generations.",
+        "Workshop of the Tzu Chi RD Teachers' Club": "Workshop of the Tzu Chi RD Teachers' Club",
+        "First training workshop of the Tzu Chi RD Teachers' Club, focused on strengthening those who educate and accompany new generations.":
+        "First training workshop of the Tzu Chi RD Teachers' Club, focused on strengthening those who educate and accompany new generations.",
 
-        "Tzu Chi lleva amor y solidaridad a Sabana de la Mar":
-        "Tzu Chi Brings Love and Solidarity to Sabana de la Mar",
+        "Tzu Chi brings love and solidarity to Sabana de la Mar": "Tzu Chi brings love and solidarity to Sabana de la Mar",
+        "A day of help and solidarity brought Tzu Chi's support to families in Sabana de la Mar.":
+        "A day of help and solidarity brought Tzu Chi's support to families in Sabana de la Mar.",
 
-        "Una jornada de ayuda y solidaridad llevó el apoyo de Tzu Chi a familias de Sabana de la Mar.":
-        "A day of assistance and solidarity brought Tzu Chi's support to families in Sabana de la Mar.",
+        "News and Stories": "News and Stories",
 
-        "Noticias e Historias": "News & Stories",
+        "Elderly drive environmental change in Los Ríos":
+        "Elderly drive environmental change in Los Ríos",
 
-        "Adultos mayores impulsan el cambio ambiental en Rivera":
-        "Older Adults Drive Environmental Change in Rivera",
+        "In Los Ríos, Santo Domingo, hundreds of elderly people have turned recycling into a way to protect their community, support others, and strengthen bonds between neighbors.":
+        "In Los Ríos, Santo Domingo, hundreds of elderly people have turned recycling into a way to protect their community, support others, and strengthen bonds between neighbors.",
 
-        "En Rivera, Santo Domingo, cientos de adultos mayores han convertido el reciclaje en una forma de proteger su comunidad, apoyar a otras personas y fortalecer los lazos entre vecinos.":
-        "In Rivera, Santo Domingo, hundreds of older adults have turned recycling into a way to protect their community, support others, and strengthen bonds among neighbors.",
+        "Read full story": "Read full story",
 
-        "Leer historia completa": "Read Full Story",
+        "Recycling transforms the Los Ríos community":
+        "Recycling transforms the Los Ríos community",
 
-        "El reciclaje transforma la comunidad de Rivera":
-        "Recycling Transforms the Rivera Community",
+        "Education that transforms lives in La Romana":
+        "Education that transforms lives in La Romana",
 
-        "Educación que transforma vidas en La Romana":
-        "Education That Transforms Lives in La Romana",
+        "Tzu Chi brings health and food to Manabao":
+        "Tzu Chi brings health and food to Manabao",
 
-        "Tzu Chi lleva salud y alimentos a Manabao":
-        "Tzu Chi Brings Healthcare and Food to Manabao",
+        "March 9, 2026": "March 9, 2026",
+        "May 29, 2025": "May 29, 2025",
+        "August 14, 2025": "August 14, 2025",
 
-        "9 marzo, 2026": "March 9, 2026",
-        "29 mayo, 2025": "May 29, 2025",
-        "14 agosto, 2025": "August 14, 2025",
+        "Our Impact": "Our Impact",
+        "Beneficiaries": "Beneficiaries",
+        "Volunteers": "Volunteers",
+        "Annual Activities": "Annual Activities",
+        "Communities Served": "Communities Served",
 
-        "Nuestro Impacto": "Our Impact",
-        "Beneficiarios": "Beneficiaries",
-        "Voluntarios": "Volunteers",
-        "Actividades Anuales": "Annual Activities",
-        "Comunidades Atendidas": "Communities Served",
+        "Your time can transform a life":
+        "Your time can transform a life",
 
-        "Tu tiempo puede transformar una vida":
-        "Your Time Can Transform a Life",
+        "Join our network of compassion. Every small effort counts when added to the efforts of thousands of hearts willing to serve.":
+        "Join our network of compassion. Every small effort counts when added to the efforts of thousands of hearts willing to serve.",
 
-        "Únete a nuestra red de compasión. Cada pequeño esfuerzo cuenta cuando se suma al de miles de corazones dispuestos a servir.":
-        "Join our network of compassion. Every small effort matters when combined with thousands of hearts willing to serve.",
+        "Become a Volunteer": "Become a Volunteer",
 
-        "Convertirme en Voluntario": "Become a Volunteer",
+        "Your donation can become hope":
+        "Your donation can become hope",
 
-        "Tu donación puede convertirse en esperanza":
-        "Your Donation Can Become Hope",
+        "With your financial contribution, you help us provide food, medicine, education, and relief to those in greatest need in the Dominican Republic.":
+        "With your financial contribution, you help us provide food, medicine, education, and relief to those in greatest need in the Dominican Republic.",
 
-        "Con tu aporte económico nos ayudas a llevar alimentos, medicinas, educación y socorro a quienes más lo necesitan en la República Dominicana.":
-        "Your financial contribution helps us provide food, medicine, education, and disaster relief to those who need it most in the Dominican Republic.",
-
-        "Hacer una Donación": "Make a Donation",
+        "Make a Donation": "Make a Donation",
 
         "Calle La Plaza No 3, Renacimiento":
-        "Calle La Plaza No. 3, Renacimiento",
+        "Calle La Plaza No 3, Renacimiento",
 
-        "Envíanos un mensaje": "Send Us a Message",
-        "Nombre": "Name",
-        "Correo Electrónico": "Email Address",
-        "Mensaje": "Message",
-        "Enviar Mensaje": "Send Message",
+        "Send us a message": "Send us a message",
+        "Name": "Name",
+        "Email": "Email",
+        "Message": "Message",
+        "Send Message": "Send Message",
 
-        "Enlaces": "Links",
-        "Política de Privacidad": "Privacy Policy",
+        "Links": "Links",
+        "Privacy Policy": "Privacy Policy",
 
-        "Contacto": "Contact",
-        "Santo Domingo, República Dominicana":
+        "Contact": "Contact",
+        "Santo Domingo, Dominican Republic":
         "Santo Domingo, Dominican Republic",
 
-        "Compasión en acción. Aliviando el sufrimiento y trayendo esperanza a las comunidades de la República Dominicana a través del amor y el servicio desinteresado.":
-        "Compassion in action. Relieving suffering and bringing hope to communities in the Dominican Republic through love and selfless service.",
+        "Compassion in action. Alleviating suffering and bringing hope to the communities of the Dominican Republic through love and selfless service.":
+        "Compassion in action. Alleviating suffering and bringing hope to the communities of the Dominican Republic through love and selfless service.",
 
-        "© 2026 Fundación Budista Tzu Chi República Dominicana. Todos los derechos reservados.":
-        "© 2026 Tzu Chi Buddhist Foundation Dominican Republic. All rights reserved."
+        "© 2026 Tzu Chi Buddhist Foundation Dominican Republic. All rights reserved.":
+        "© 2026 Tzu Chi Buddhist Foundation Dominican Republic. All rights reserved.",
+
+        "section5.date1": "NOVEMBER 16, 2026",
+        "section5.title1": "Children's Workshop of the Tzu Chi-Los Ríos Space",
+        "section5.desc1": "Every Saturday, children participate in creative activities with recyclable materials and learn values of kindness, respect, and environmental care.",
+        "section5.link1": "View on Facebook",
+        "section5.date2": "OCTOBER 16, 2026",
+        "section5.title2": "Plan Lea strengthens educational leadership",
+        "section5.desc2": "Tzu Chi and Plan Lea held a distinguished leadership masterclass and distributed Jing Si Aphorisms to 18 educational districts.",
+        "section5.link2": "View on Facebook",
+        "section5.date3": "OCTOBER 12, 2026",
+        "section5.title3": "Tzu Chi supports families in Monte Plata",
+        "section5.desc3": "The operation benefited 617 vulnerable families in Los Guineos, La Pista, and La Altagracia, with the participation of 56 volunteers.",
+        "section5.link3": "View on Facebook",
+
+        "The 4 Missions and 8 Footprints": "The 4 Missions and 8 Footprints",
+        "Las 4 Misiones y 8 Huellas": "Our Missions and Their Footprints in the World",
+        "Cuatro misiones fundamentales dan origen a ocho huellas de acción con las que Tzu Chi sirve y transforma a las comunidades.": "Four fundamental missions give rise to eight footprints of action through which Tzu Chi serves and transforms communities.",
+        "section2.title": "Our Missions and Their Footprints in the World",
+        "section2.subtitle": "Four fundamental missions give rise to eight footprints of action through which Tzu Chi accompanies, serves, and transforms communities.",
+        "MISIÓN 1": "MISSION 1",
+        "MISIÓN 2": "MISSION 2",
+        "MISIÓN 3": "MISSION 3",
+        "MISIÓN 4": "MISSION 4",
+        "Four fundamental missions give rise to eight action footprints with which Tzu Chi serves and transforms communities.":
+        "Four fundamental missions give rise to eight action footprints with which Tzu Chi serves and transforms communities.",
+        "section2.mission": "MISSION",
+        "section2.footprint": "Footprint",
+        "section2.charity": "Charity",
+        "section2.charityDesc": "Direct aid and accompaniment to vulnerable families and communities.",
+        "section2.charityDirect": "Community charity",
+        "section2.international": "International humanitarian aid",
+        "section2.medicine": "Medicine",
+        "section2.medicineDesc": "Free medical care and prevention that protect human health.",
+        "section2.outreach": "Community medical jornadas",
+        "section2.marrow": "Bone marrow donation",
+        "section2.education": "Education",
+        "section2.educationDesc": "Academic and values education to cultivate conscious individuals.",
+        "section2.educationSchool": "Tzu Chi Education and Schools",
+        "section2.environment": "Environmental protection",
+        "section2.culture": "Humanistic Culture",
+        "section2.cultureDesc": "Dissemination of values that promote peace, gratitude, and social harmony.",
+        "section2.humanism": "Humanistic culture and value dissemination",
+        "section2.community": "Community volunteering",
     },
-
 
     // ============================================================
     // TRADITIONAL CHINESE
     // ============================================================
     zh: {
 
-        "Fundación Budista Tzu Chi RD": "慈濟佛教基金會多明尼加共和國分會",
-        "Global": "全球",
-        "Tienda Jing Si": "靜思書軒",
-        "Da Ai TV": "大愛電視",
-        "Español": "西班牙文",
-        "English": "英文",
+        "慈濟基金會多明尼加": "慈濟基金會多明尼加",
+        "全球": "全球",
+        "靜思商店": "靜思商店",
+        "大愛電視": "大愛電視",
+        "西班牙文": "西班牙文",
+        "英文": "英文",
         "中文": "中文",
-        "Contáctenos": "聯絡我們",
+        "聯繫我們": "聯繫我們",
 
-        "Quiénes Somos": "關於我們",
-        "Qué Hacemos": "我們的工作",
-        "Nuestros Valores": "我們的價值",
-        "Llegada a RD": "慈濟來到多明尼加",
-        "Eventos": "活動",
+        "關於我們": "關於我們",
+        "我們的使命": "我們的使命",
+        "我們的價值觀": "我們的價值觀",
+        "抵達多明尼加": "抵達多明尼加",
+        "活動": "活動",
 
-        "Unirme como Voluntario": "加入志工行列",
-        "Hacer Donación": "捐款",
+        "加入志工行列": "加入志工行列",
+        "捐款": "捐款",
 
-        "Menú Principal": "主選單",
+        "主選單": "主選單",
 
-        "República Dominicana": "多明尼加共和國",
+        "多明尼加共和國": "多明尼加共和國",
+        "播下慈悲，改變生命。": "播下慈悲，改變生命。",
+        "在慈濟多明尼加，我們以慈悲、愛心和人道行動服務社區。": "在慈濟多明尼加，我們以慈悲、愛心和人道行動服務社區。",
 
-        "Sembrando compasión, transformando vidas.":
-        "播下慈悲的種子，轉變生命。",
+        "瞭解更多": "瞭解更多",
 
-        "En Tzu Chi RD servimos a nuestras comunidades con compasión, amor y acción humanitaria.":
-        "慈濟多明尼加以慈悲、愛與人道行動服務社區。",
+        "慈濟基金會是一個以誠信、正直、信任和誠實為原則的國際人道組織，致力於減輕全球的苦難。":
+        "慈濟基金會是一個以誠信、正直、信任和誠實為原則的國際人道組織，致力於減輕全球的苦難。",
 
-        "Conoce más": "了解更多",
+        "慈善": "慈善",
+        "直接協助弱勢家庭和社區。": "直接協助弱勢家庭和社區。",
 
-        "Fundada sobre los principios de sinceridad, integridad, confianza y honestidad, la Fundación Budista Tzu Chi es una organización humanitaria internacional dedicada a aliviar el sufrimiento en todo el mundo.":
-        "慈濟佛教基金會秉持真誠、正直、信任與誠實的理念，是一個致力於為世界各地減輕苦難的國際人道組織。",
+        "醫療": "醫療",
+        "提供免費醫療和預防保健服務。": "提供免費醫療和預防保健服務。",
 
-        "Caridad": "慈善",
-        "Asistencia directa a familias y comunidades vulnerables.":
-        "直接協助弱勢家庭與社區。",
+        "教育": "教育",
+        "培養價值觀和提供教育機會。": "培養價值觀和提供教育機會。",
 
-        "Medicina": "醫療",
-        "Atención médica gratuita y jornadas de salud preventivas.":
-        "提供免費醫療服務及預防保健活動。",
+        "人道援助": "人道援助",
+        "全面回應基本人類需求。": "全面回應基本人類需求。",
 
-        "Educación": "教育",
-        "Fomentando valores y brindando oportunidades educativas.":
-        "培養正向價值觀，提供教育機會。",
+        "救助": "救助",
+        "災區的緊急援助和重建。": "災區的緊急援助和重建。",
 
-        "Ayuda Humanitaria": "人道援助",
-        "Respuesta integral a las necesidades humanas fundamentales.":
-        "全面回應人們最基本的生活需求。",
+        "環境": "環境",
+        "透過回收和教育保護地球。": "透過回收和教育保護地球。",
 
-        "Socorro": "災難救援",
-        "Asistencia inmediata y reconstrucción en zonas de desastre.":
-        "在災區提供即時援助與重建工作。",
+        "文化": "文化",
+        "透過人文關懷促進和平與社會和諧。": "透過人文關懷促進和平與社會和諧。",
 
-        "Medio Ambiente": "環境保護",
-        "Protección del planeta a través del reciclaje y la educación.":
-        "透過回收與環境教育守護地球。",
+        "志工服務": "志工服務",
+        "在當地社區中傳遞慈悲的愛。": "在當地社區中傳遞慈悲的愛。",
 
-        "Cultura": "文化",
-        "Promoviendo la paz y la armonía social a través del humanismo.":
-        "透過人文精神促進和平與社會和諧。",
+        "感恩": "感恩",
+        "尊重": "尊重",
+        "愛": "愛",
+        "慈悲": "慈悲",
+        "服務": "服務",
 
-        "Voluntariado": "志工服務",
-        "Movilizando el amor compasivo en las comunidades locales.":
-        "在當地社區推動慈悲與愛的力量。",
-
-        "Gratitud": "感恩",
-        "Respeto": "尊重",
-        "Amor": "愛",
-        "Compasión": "慈悲",
-        "Servicio": "服務",
-
-        "Nuestra Historia en RD": "慈濟在多明尼加的歷史",
+        "我們在多明尼加的故事": "我們在多明尼加的故事",
 
         "1998": "1998",
-        "Llegada inicial en respuesta al Huracán Georges, marcando el inicio de la misión de Tzu Chi en la República Dominicana.":
-        "1998年，慈濟因應喬治颶風災情來到多明尼加，開啟了慈濟在當地的志業。",
+        "因應喬治颶風而初次抵達，開啟了慈濟在多明尼加的使命。":
+        "因應喬治颶風而初次抵達，開啟了慈濟在多明尼加的使命。",
 
         "2000": "2000",
-        "Inauguración de la Escuela Tzu Chi en La Romana, brindando educación de calidad a cientos de niños de escasos recursos.":
-        "2000年，慈濟學校於拉羅馬納成立，為數百名經濟弱勢兒童提供優質教育。",
+        "在拉羅馬納成立慈濟學校，為數百名貧困兒童提供優質教育。":
+        "在拉羅馬納成立慈濟學校，為數百名貧困兒童提供優質教育。",
 
-        "Hoy": "今天",
-        "Continuamos expandiendo nuestro impacto a través de programas de salud, educación, reciclaje y ayuda comunitaria en todo el país.":
-        "今天，我們持續透過醫療、教育、回收及社區援助計畫，在全國各地擴大服務的影響力。",
+        "今天": "今天",
+        "我們持續透過健康、教育、回收和社區援助計畫擴大影響力。":
+        "我們持續透過健康、教育、回收和社區援助計畫擴大影響力。",
 
-        "Eventos Recientes": "近期活動",
-        "Ver todos": "查看全部",
+        "section4.eyebrow": "服務28年",
+        "section4.subtitle": "探索慈濟在多明尼加的教育、健康和希望的里程碑。",
+        "section4.t1": "抵達多明尼加",
+        "section4.d1": "慈濟在喬治颶風後開始在該國的使命。",
+        "section4.t2": "小學建設",
+        "section4.d2": "拉羅馬納慈濟小學的建設開始。",
+        "section4.t3": "第一次小學畢業典禮",
+        "section4.d3": "慈濟小學舉行第一次畢業典禮。",
+        "section4.t4": "成人基礎教育",
+        "section4.d4": "為成人提供升學機會的教育擴展計畫。",
+        "section4.t5": "拉羅馬納熱食供應",
+        "section4.d5": "持續為老年人和弱勢者提供熱食的計畫。",
+        "section4.t6": "因應COVID-19",
+        "section4.d6": "向弱勢社區提供防疫物資。",
+        "section4.t7": "雙月牙科服務",
+        "section4.d7": "重新啟動雙月牙科服務，惠及社區。",
+        "section4.t8": "學校全面擴建",
+        "section4.d8": "拉羅馬納慈濟小學和中學的建立。",
+        "section4.t9": "策略聯盟",
+        "section4.d9": "與UTECO大學和吉米尼安基金會簽署協議。",
+        "最近活動": "最近活動",
+        "查看全部": "查看全部",
 
-        "31 ENERO, 2026": "2026年1月31日",
-        "19 JUNIO, 2026": "2026年6月19日",
-        "12 JULIO, 2026": "2026年7月12日",
+        "2026年1月31日": "2026年1月31日",
+        "2026年6月19日": "2026年6月19日",
+        "2026年7月12日": "2026年7月12日",
 
-        "Inducción para Nuevos Voluntarios":
-        "新志工培訓",
+        "新志工說明會": "新志工說明會",
+        "在薩巴納格蘭德德博亞為希望開始與慈濟一起服務的新志工舉辦的特別日子。":
+        "在薩巴納格蘭德德博亞為希望開始與慈濟一起服務的新志工舉辦的特別日子。",
 
-        "Una jornada especial en Sabana Grande de Boyá para nuevos voluntarios que desean comenzar su camino de servicio con Tzu Chi.":
-        "在薩瓦納格蘭德德博亞舉辦特別活動，歡迎希望開始慈濟服務之路的新志工。",
+        "慈濟多明尼加教師俱樂部工作坊": "慈濟多明尼加教師俱樂部工作坊",
+        "慈濟多明尼加教師俱樂部的第一次培訓工作坊，專注於加強教育和陪伴新一代的教師。":
+        "慈濟多明尼加教師俱樂部的第一次培訓工作坊，專注於加強教育和陪伴新一代的教師。",
 
-        "Taller del Club de Docentes Tzu Chi RD":
-        "慈濟多明尼加教師聯誼會工作坊",
+        "慈濟將愛與團結帶到薩巴納德拉馬爾": "慈濟將愛與團結帶到薩巴納德拉馬爾",
+        "一次幫助和團結的行動將慈濟的支持帶給薩巴納德拉馬爾的家庭。":
+        "一次幫助和團結的行動將慈濟的支持帶給薩巴納德拉馬爾的家庭。",
 
-        "Primer taller de capacitación del Club de Docentes Tzu Chi RD, enfocado en fortalecer a quienes educan y acompañan a las nuevas generaciones.":
-        "慈濟多明尼加教師聯誼會首次培訓工作坊，致力於支持教育與陪伴下一代的教師。",
+        "新聞與故事": "新聞與故事",
 
-        "Tzu Chi lleva amor y solidaridad a Sabana de la Mar":
-        "慈濟將愛與關懷帶到薩瓦納德拉馬",
+        "長者推動洛斯里奧斯的環境變革":
+        "長者推動洛斯里奧斯的環境變革",
 
-        "Una jornada de ayuda y solidaridad llevó el apoyo de Tzu Chi a familias de Sabana de la Mar.":
-        "慈濟透過援助與關懷活動，將支持帶給薩瓦納德拉馬的家庭。",
+        "在洛斯里奧斯，聖多明哥，數百名長者將回收利用變成保護社區、支持他人和加強鄰里之間聯繫的方式。":
+        "在洛斯里奧斯，聖多明哥，數百名長者將回收利用變成保護社區、支持他人和加強鄰里之間聯繫的方式。",
 
-        "Noticias e Historias": "新聞與故事",
+        "閱讀完整故事": "閱讀完整故事",
 
-        "Adultos mayores impulsan el cambio ambiental en Rivera":
-        "里韋拉的長者推動環境改變",
+        "回收改變洛斯里奧斯社區":
+        "回收改變洛斯里奧斯社區",
 
-        "En Rivera, Santo Domingo, cientos de adultos mayores han convertido el reciclaje en una forma de proteger su comunidad, apoyar a otras personas y fortalecer los lazos entre vecinos.":
-        "在聖多明各的里韋拉，數百名長者將回收化為守護社區、幫助他人及凝聚鄰里情誼的行動。",
+        "教育改變拉羅馬納的生命":
+        "教育改變拉羅馬納的生命",
 
-        "Leer historia completa": "閱讀完整故事",
+        "慈濟將健康和食物帶到馬納巴奧":
+        "慈濟將健康和食物帶到馬納巴奧",
 
-        "El reciclaje transforma la comunidad de Rivera":
-        "回收改變里韋拉社區",
+        "2026年3月9日": "2026年3月9日",
+        "2025年5月29日": "2025年5月29日",
+        "2025年8月14日": "2025年8月14日",
 
-        "Educación que transforma vidas en La Romana":
-        "改變拉羅馬納生命的教育",
+        "我們的影響": "我們的影響",
+        "受益人": "受益人",
+        "志工": "志工",
+        "年度活動": "年度活動",
+        "服務社區": "服務社區",
 
-        "Tzu Chi lleva salud y alimentos a Manabao":
-        "慈濟將醫療與食物帶到馬納包",
+        "您的時間可以改變一個生命":
+        "您的時間可以改變一個生命",
 
-        "9 marzo, 2026": "2026年3月9日",
-        "29 mayo, 2025": "2025年5月29日",
-        "14 agosto, 2025": "2025年8月14日",
+        "加入我們的慈悲網絡。每一點小小的努力，當與千千萬萬顆願意服務的心靈的努力相加時，都是有意義的。":
+        "加入我們的慈悲網絡。每一點小小的努力，當與千千萬萬顆願意服務的心靈的努力相加時，都是有意義的。",
 
-        "Nuestro Impacto": "我們的影響力",
-        "Beneficiarios": "受助者",
-        "Voluntarios": "志工",
-        "Actividades Anuales": "年度活動",
-        "Comunidades Atendidas": "服務社區",
+        "成為志工": "成為志工",
 
-        "Tu tiempo puede transformar una vida":
-        "你的時間，可以改變一個生命",
+        "您的捐款可以變成希望":
+        "您的捐款可以變成希望",
 
-        "Únete a nuestra red de compasión. Cada pequeño esfuerzo cuenta cuando se suma al de miles de corazones dispuestos a servir.":
-        "加入我們的慈悲行動網絡。當每一份小小的努力匯聚成千上萬顆願意付出的心，就能創造巨大的改變。",
+        "通過您的經濟支持，我們能夠向多明尼加最需要幫助的人提供食物、藥品、教育和救助。":
+        "通過您的經濟支持，我們能夠向多明尼加最需要幫助的人提供食物、藥品、教育和救助。",
 
-        "Convertirme en Voluntario": "成為志工",
-
-        "Tu donación puede convertirse en esperanza":
-        "你的捐款可以化為希望",
-
-        "Con tu aporte económico nos ayudas a llevar alimentos, medicinas, educación y socorro a quienes más lo necesitan en la República Dominicana.":
-        "您的捐款能幫助我們在多明尼加共和國為最需要的人提供食物、醫療、教育與災難救援。",
-
-        "Hacer una Donación": "捐款",
+        "捐款": "捐款",
 
         "Calle La Plaza No 3, Renacimiento":
-        "La Plaza街3號，Renacimiento",
+        "Calle La Plaza No 3, Renacimiento",
 
-        "Envíanos un mensaje": "傳送訊息給我們",
-        "Nombre": "姓名",
-        "Correo Electrónico": "電子郵件",
-        "Mensaje": "訊息",
-        "Enviar Mensaje": "傳送訊息",
+        "給我們發送消息": "給我們發送消息",
+        "姓名": "姓名",
+        "電子郵件": "電子郵件",
+        "留言": "留言",
+        "發送留言": "發送留言",
 
-        "Enlaces": "相關連結",
-        "Política de Privacidad": "隱私權政策",
+        "鏈接": "鏈接",
+        "隱私政策": "隱私政策",
 
-        "Contacto": "聯絡方式",
+        "聯繫方式": "聯繫方式",
+        "聖多明哥，多明尼加共和國":
+        "聖多明哥，多明尼加共和國",
 
-        "Santo Domingo, República Dominicana":
-        "多明尼加共和國，聖多明各",
+        "行動中的慈悲。通過愛和無私的服務，減輕多明尼加社區的痛苦，帶來希望。":
+        "行動中的慈悲。通過愛和無私的服務，減輕多明尼加社區的痛苦，帶來希望。",
 
-        "Compasión en acción. Aliviando el sufrimiento y trayendo esperanza a las comunidades de la República Dominicana a través del amor y el servicio desinteresado.":
-        "慈悲化為行動。透過愛與無私的服務，減輕苦難，為多明尼加共和國的社區帶來希望。",
+        "© 2026 慈濟基金會多明尼加。版權所有。":
+        "© 2026 慈濟基金會多明尼加。版權所有。",
 
-        "© 2026 Fundación Budista Tzu Chi República Dominicana. Todos los derechos reservados.":
-        "© 2026 慈濟佛教基金會多明尼加共和國分會。版權所有。"
+        "section5.date1": "2026年11月16日",
+        "section5.title1": "慈濟-洛斯里奧斯空間兒童工作坊",
+        "section5.desc1": "每週六，兒童參加可回收材料的創意活動，學習善良、尊重和環境保護的價值觀。",
+        "section5.link1": "查看Facebook",
+        "section5.date2": "2026年10月16日",
+        "section5.title2": "計劃Lea加強教育領導力",
+        "section5.desc2": "慈濟和計劃Lea在18個教育區舉辦了卓越的領導力大師班，並分發了靜思語錄。",
+        "section5.link2": "查看Facebook",
+        "section5.date3": "2026年10月12日",
+        "section5.title3": "慈濟支持蒙特普拉塔的家庭",
+        "section5.desc3": "此次行動惠及617個弱勢家庭，涉及洛斯吉內奧斯、拉皮斯塔和拉阿爾塔格拉西亞，並有56名志工參與。",
+        "section5.link3": "查看Facebook",
+
+        "四大使命與八大足跡": "四大使命與八大足跡",
+        "Las 4 Misiones y 8 Huellas": "我們的使命及其在世界上的足跡",
+        "Cuatro misiones fundamentales dan origen a ocho huellas de acción con las que Tzu Chi sirve y transforma a las comunidades.": "四項基本使命產生八個行動足跡，慈濟藉此服務並改變社區。",
+        "section2.title": "我們的使命及其在世界上的足跡",
+        "section2.subtitle": "四項基本使命產生八個行動足跡，慈濟藉此陪伴、服務並改變社區。",
+        "MISIÓN 1": "使命 1",
+        "MISIÓN 2": "使命 2",
+        "MISIÓN 3": "使命 3",
+        "MISIÓN 4": "使命 4",
+        "四項基本使命產生八個行動足跡，慈濟藉此服務和改變社區。":
+        "四項基本使命產生八個行動足跡，慈濟藉此服務和改變社區。",
+        "section2.mission": "使命",
+        "section2.footprint": "足跡",
+        "section2.charity": "慈善",
+        "section2.charityDesc": "直接援助和陪伴弱勢家庭和社區。",
+        "section2.charityDirect": "社區慈善",
+        "section2.international": "國際人道援助",
+        "section2.medicine": "醫療",
+        "section2.medicineDesc": "免費醫療和預防保健服務，保護人類健康。",
+        "section2.outreach": "社區醫療日",
+        "section2.marrow": "骨髓捐贈",
+        "section2.education": "教育",
+        "section2.educationDesc": "學術和價值觀教育，培養有意識的個體。",
+        "section2.educationSchool": "慈濟教育與學校",
+        "section2.environment": "環境保護",
+        "section2.culture": "人文文化",
+        "section2.cultureDesc": "傳播促進和平、感恩和社會和諧的價值觀",
+        "section2.humanism": "人文文化與價值觀傳播",
+        "section2.community": "社區志願服務",
     }
 };
-
-
-// ============================================================
-// TRANSLATION ENGINE
-// ============================================================
-
-let currentLanguage = "es";
-
-const originalTextNodes = new WeakMap();
-
-function normalizeText(text) {
-    return (text || "")
-        .replace(/\s+/g, " ")
-        .trim();
-}
-
-function getOriginalText(node) {
-    if (!originalTextNodes.has(node)) {
-        originalTextNodes.set(node, node.nodeValue);
-    }
-
-    return originalTextNodes.get(node);
-}
-
-
-// ============================================================
-// TRANSLATE PAGE
-// ============================================================
-
-function translatePage(language) {
-
-    if (!translations[language]) {
-        language = "es";
-    }
-
-    currentLanguage = language;
-
-    const dictionary = translations[language];
-
-
-    // --------------------------------------------------------
-    // ELEMENTS WITH data-i18n
-    // --------------------------------------------------------
-    //
-    // The homepage uses data-i18n attributes, but the
-    // translation dictionaries use the original Spanish text
-    // as their keys.
-    //
-    // We therefore translate the actual Spanish text node
-    // instead of trying to use the data-i18n value as the key.
-    //
-    // This also preserves Material Symbols icons.
-    // --------------------------------------------------------
-
-    document.querySelectorAll("[data-i18n]").forEach(function(element) {
-
-        const textNodes = [];
-
-        const walker = document.createTreeWalker(
-            element,
-            NodeFilter.SHOW_TEXT,
-            null
-        );
-
-        while (walker.nextNode()) {
-
-            const node = walker.currentNode;
-            const parent = node.parentElement;
-
-            if (!parent) continue;
-
-            // Ignore Material Symbols icon text
-            if (parent.closest(".material-symbols-outlined")) {
-                continue;
-            }
-
-            if (!normalizeText(node.nodeValue)) {
-                continue;
-            }
-
-            textNodes.push(node);
-        }
-
-
-        if (textNodes.length === 0) {
-            return;
-        }
-
-
-        // Usually the last text node is the visible label
-        // when an icon is also present.
-        const targetNode = textNodes[textNodes.length - 1];
-
-        const originalText = getOriginalText(targetNode);
-        const normalizedOriginal = normalizeText(originalText);
-
-        if (dictionary[normalizedOriginal] !== undefined) {
-
-            const leadingSpaces =
-                originalText.match(/^\s*/)?.[0] || "";
-
-            const trailingSpaces =
-                originalText.match(/\s*$/)?.[0] || "";
-
-            targetNode.nodeValue =
-                leadingSpaces +
-                dictionary[normalizedOriginal] +
-                trailingSpaces;
-        }
-
-    });
-
-
-    // --------------------------------------------------------
-    // NORMAL TEXT WITHOUT data-i18n
-    // --------------------------------------------------------
-
-    const walker = document.createTreeWalker(
-        document.body,
-        NodeFilter.SHOW_TEXT,
-        {
-            acceptNode: function(node) {
-
-                const parent = node.parentElement;
-
-                if (!parent) {
-                    return NodeFilter.FILTER_REJECT;
-                }
-
-                if (
-                    parent.tagName === "SCRIPT" ||
-                    parent.tagName === "STYLE" ||
-                    parent.tagName === "NOSCRIPT"
-                ) {
-                    return NodeFilter.FILTER_REJECT;
-                }
-
-                if (!normalizeText(node.nodeValue)) {
-                    return NodeFilter.FILTER_REJECT;
-                }
-
-                // Already handled above
-                if (parent.closest("[data-i18n]")) {
-                    return NodeFilter.FILTER_REJECT;
-                }
-
-                // Never translate Material Symbols
-                if (parent.closest(".material-symbols-outlined")) {
-                    return NodeFilter.FILTER_REJECT;
-                }
-
-                return NodeFilter.FILTER_ACCEPT;
-            }
-        }
-    );
-
-
-    const textNodes = [];
-
-    while (walker.nextNode()) {
-        textNodes.push(walker.currentNode);
-    }
-
-
-    textNodes.forEach(function(node) {
-
-        const originalText = getOriginalText(node);
-        const normalizedOriginal = normalizeText(originalText);
-
-        const translatedText =
-            dictionary[normalizedOriginal];
-
-        if (translatedText !== undefined) {
-
-            const leadingSpaces =
-                originalText.match(/^\s*/)?.[0] || "";
-
-            const trailingSpaces =
-                originalText.match(/\s*$/)?.[0] || "";
-
-            node.nodeValue =
-                leadingSpaces +
-                translatedText +
-                trailingSpaces;
-        }
-
-    });
-
-
-    // --------------------------------------------------------
-    // ALT TEXT
-    // --------------------------------------------------------
-
-    const altTranslations = {
-
-        "Tzu Chi": {
-            es: "Tzu Chi",
-            en: "Tzu Chi",
-            zh: "慈濟"
-        },
-
-        "Tzu Chi Logo": {
-            es: "Tzu Chi Logo",
-            en: "Tzu Chi Logo",
-            zh: "慈濟標誌"
-        },
-
-        "Mapa Tzu Chi": {
-            es: "Mapa Tzu Chi",
-            en: "Tzu Chi Map",
-            zh: "慈濟地圖"
-        },
-
-        "Inducción para Nuevos Voluntarios": {
-            es: "Inducción para Nuevos Voluntarios",
-            en: "Orientation for New Volunteers",
-            zh: "新志工培訓"
-        },
-
-        "Taller del Club de Docentes Tzu Chi RD": {
-            es: "Taller del Club de Docentes Tzu Chi RD",
-            en: "Tzu Chi RD Teachers Club Workshop",
-            zh: "慈濟多明尼加教師聯誼會工作坊"
-        },
-
-        "Tzu Chi lleva amor y solidaridad a Sabana de la Mar": {
-            es: "Tzu Chi lleva amor y solidaridad a Sabana de la Mar",
-            en: "Tzu Chi Brings Love and Solidarity to Sabana de la Mar",
-            zh: "慈濟將愛與關懷帶到薩瓦納德拉馬"
-        },
-
-        "Adultos mayores impulsan el cambio ambiental en Rivera": {
-            es: "Adultos mayores impulsan el cambio ambiental en Rivera",
-            en: "Older Adults Drive Environmental Change in Rivera",
-            zh: "里韋拉的長者推動環境改變"
-        },
-
-        "El reciclaje transforma la comunidad de Rivera": {
-            es: "El reciclaje transforma la comunidad de Rivera",
-            en: "Recycling Transforms the Rivera Community",
-            zh: "回收改變里韋拉社區"
-        },
-
-        "Educación que transforma vidas en La Romana": {
-            es: "Educación que transforma vidas en La Romana",
-            en: "Education That Transforms Lives in La Romana",
-            zh: "改變拉羅馬納生命的教育"
-        },
-
-        "Tzu Chi lleva salud y alimentos a Manabao": {
-            es: "Tzu Chi lleva salud y alimentos a Manabao",
-            en: "Tzu Chi Brings Healthcare and Food to Manabao",
-            zh: "慈濟將醫療與食物帶到馬納包"
-        }
-
-    };
-
-
-    document.querySelectorAll("[alt]").forEach(function(element) {
-
-        if (!element.hasAttribute("data-original-alt")) {
-            element.setAttribute(
-                "data-original-alt",
-                element.getAttribute("alt")
-            );
-        }
-
-        const originalAlt =
-            element.getAttribute("data-original-alt");
-
-        if (
-            altTranslations[originalAlt] &&
-            altTranslations[originalAlt][language]
-        ) {
-            element.setAttribute(
-                "alt",
-                altTranslations[originalAlt][language]
-            );
-        }
-
-    });
-
-
-    // --------------------------------------------------------
-    // TITLE ATTRIBUTES
-    // --------------------------------------------------------
-
-    const titleTranslations = {
-
-        "Síguenos en Facebook": {
-            es: "Síguenos en Facebook",
-            en: "Follow us on Facebook",
-            zh: "在 Facebook 關注我們"
-        },
-
-        "Síguenos en Instagram": {
-            es: "Síguenos en Instagram",
-            en: "Follow us on Instagram",
-            zh: "在 Instagram 關注我們"
-        },
-
-        "Síguenos en YouTube": {
-            es: "Síguenos en YouTube",
-            en: "Follow us on YouTube",
-            zh: "在 YouTube 關注我們"
-        }
-
-    };
-
-
-    document.querySelectorAll("[title]").forEach(function(element) {
-
-        if (!element.hasAttribute("data-original-title")) {
-            element.setAttribute(
-                "data-original-title",
-                element.getAttribute("title")
-            );
-        }
-
-        const originalTitle =
-            element.getAttribute("data-original-title");
-
-        if (
-            titleTranslations[originalTitle] &&
-            titleTranslations[originalTitle][language]
-        ) {
-            element.setAttribute(
-                "title",
-                titleTranslations[originalTitle][language]
-            );
-        }
-
-    });
-
-
-    // --------------------------------------------------------
-    // PLACEHOLDERS
-    // --------------------------------------------------------
-
-    const placeholderTranslations = {
-
-        "Nombre": {
-            es: "Nombre",
-            en: "Name",
-            zh: "姓名"
-        },
-
-        "Correo Electrónico": {
-            es: "Correo Electrónico",
-            en: "Email Address",
-            zh: "電子郵件"
-        },
-
-        "Mensaje": {
-            es: "Mensaje",
-            en: "Message",
-            zh: "訊息"
-        }
-
-    };
-
-
-    document.querySelectorAll("[placeholder]").forEach(function(element) {
-
-        if (!element.hasAttribute("data-original-placeholder")) {
-            element.setAttribute(
-                "data-original-placeholder",
-                element.getAttribute("placeholder")
-            );
-        }
-
-        const originalPlaceholder =
-            element.getAttribute("data-original-placeholder");
-
-        if (
-            placeholderTranslations[originalPlaceholder] &&
-            placeholderTranslations[originalPlaceholder][language]
-        ) {
-            element.setAttribute(
-                "placeholder",
-                placeholderTranslations[originalPlaceholder][language]
-            );
-        }
-
-    });
-
-
-    // --------------------------------------------------------
-    // HTML LANGUAGE
-    // --------------------------------------------------------
-
-    document.documentElement.lang =
-        language === "zh"
-            ? "zh-TW"
-            : language;
-
-
-    // --------------------------------------------------------
-    // ACTIVE LANGUAGE
-    // --------------------------------------------------------
-
-    document.querySelectorAll("[data-lang-selector]").forEach(function(button) {
-
-        const buttonLanguage =
-            button.getAttribute("data-lang-selector");
-
-        button.style.fontWeight =
-            buttonLanguage === language
-                ? "bold"
-                : "normal";
-
-    });
-
-}
-
-
-// ============================================================
-// INITIALIZE
-// ============================================================
-
-document.addEventListener("DOMContentLoaded", function() {
-
-    const savedLanguage =
-        localStorage.getItem("tzuChiLanguage");
-
-    const initialLanguage =
-        savedLanguage && translations[savedLanguage]
-            ? savedLanguage
-            : "es";
-
-
-    translatePage(initialLanguage);
-
-
-    // --------------------------------------------------------
-    // LANGUAGE BUTTONS
-    // --------------------------------------------------------
-
-    document.addEventListener("click", function(event) {
-
-        const button =
-            event.target.closest("[data-lang-selector]");
-
-        if (!button) {
-            return;
-        }
-
-        event.preventDefault();
-        event.stopPropagation();
-
-
-        const language =
-            button.getAttribute("data-lang-selector");
-
-
-        if (!translations[language]) {
-            return;
-        }
-
-
-        translatePage(language);
-
-
-        localStorage.setItem(
-            "tzuChiLanguage",
-            language
-        );
-
-    });
-
-});
