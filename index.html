@@ -129,7 +129,7 @@
 <div class="flex items-center space-x-6">
 <div class="flex items-center space-x-2">
 <span class="material-symbols-outlined text-base">language</span>
-<a class="hover:text-primary transition-colors cursor-pointer active-lang" data-lang-selector="es" style="font-weight: bold;">Español</a> <span class="opacity-50">|</span> <a class="hover:text-primary transition-colors cursor-pointer" data-lang-selector="en">English</a> <span class="opacity-50">|</span> <a class="hover:text-primary transition-colors cursor-pointer" data-lang-selector="zh">中文</a>
+<a href="#" class="hover:text-primary transition-colors cursor-pointer active-lang" data-lang-selector="es" style="font-weight: bold;">Español</a> <span class="opacity-50">|</span> <a href="#" class="hover:text-primary transition-colors cursor-pointer" data-lang-selector="en">English</a> <span class="opacity-50">|</span> <a href="#" class="hover:text-primary transition-colors cursor-pointer" data-lang-selector="zh">中文</a>
 </div>
 <div class="flex items-center space-x-4">
 <a href="https://www.facebook.com/TzuChiDominicana" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors" title="Síguenos en Facebook">
@@ -615,7 +615,7 @@ Nuestras áreas de acción
 <span class="material-symbols-outlined text-5xl text-primary mb-6">volunteer_activism</span>
 <h2 class="font-headline-lg text-headline-lg text-primary mb-6" data-i18n="section8.title">Tu tiempo puede transformar una vida</h2>
 <p class="font-body-lg text-on-surface-variant mb-8" data-i18n="section8.desc">Únete a nuestra red de compasión. Cada pequeño esfuerzo cuenta cuando se suma al de miles de corazones dispuestos a servir.</p>
-<a href="https://wa.me/18495916688?text=Hola!%20Me%20interesa%20ser%20voluntario" target="_blank" rel="noopener noreferrer" class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest px-8 py-4 rounded-full hover:bg-deep-teal transition-all shadow-sm inline-flex items-center justify-center">
+<a href="https://wa.me/18495916688?text=Hola!%20Me%20interesa%20ser%20voluntario" target="_blank" rel="noopener noreferrer" class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest px-8 py-4 rounded-full hover:bg-deep-teal transition-all shadow-sm inline-flex items-center justify-center" data-i18n="section8.button">
             Convertirme en Voluntario
         </a>
 </div>
@@ -626,7 +626,7 @@ Nuestras áreas de acción
 <span class="material-symbols-outlined text-5xl text-primary mb-6">savings</span>
 <h2 class="font-headline-lg text-headline-lg text-primary mb-6" data-i18n="section9.title">Tu donación puede convertirse en esperanza</h2>
 <p class="font-body-lg text-on-surface-variant mb-8" data-i18n="section9.desc">Con tu aporte económico nos ayudas a llevar alimentos, medicinas, educación y socorro a quienes más lo necesitan en la República Dominicana.</p>
-<a href="donaciones.html" class="bg-secondary text-on-secondary font-label-sm text-label-sm uppercase tracking-widest px-8 py-4 rounded-full hover:bg-secondary/90 transition-all shadow-sm inline-flex items-center justify-center">
+<a href="donaciones.html" class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest px-8 py-4 rounded-full hover:bg-deep-teal transition-all shadow-sm inline-flex items-center justify-center" data-i18n="section9.button">
             Hacer una Donación
         </a>
 </div>
@@ -721,6 +721,374 @@ Nuestras áreas de acción
 </footer>
 </main>
 <script src="translations.js"></script>
+<script>
+    (function () {
+        const spanish = {
+            "header.brand": "Fundación Budista Tzu Chi RD",
+            "header.quienes": "Quiénes Somos",
+            "header.que-hacemos": "Qué Hacemos",
+            "header.valores": "Nuestros Valores",
+            "header.llegada": "Llegada a RD",
+            "header.eventos": "Eventos",
+            "header.volunteer": "Unirme como Voluntario",
+            "header.donate": "Hacer Donación",
+            "hero.subtitle": "República Dominicana",
+            "hero.title": "Sembrando compasión, transformando vidas.",
+            "hero.desc": "En Tzu Chi RD servimos a nuestras comunidades con compasión, amor y acción humanitaria.",
+            "hero.volunteer": "Unirme como Voluntario",
+            "hero.donate": "Hacer Donación",
+            "section1.title": "Quiénes Somos",
+            "section1.desc": "Fundada sobre los principios de sinceridad, integridad, confianza y honestidad, la Fundación Budista Tzu Chi es una organización humanitaria internacional dedicada a aliviar el sufrimiento en todo el mundo.",
+            "section1.btn": "Conoce más",
+            "section2.title": "Nuestras Misiones y sus Huellas en el Mundo",
+            "section2.subtitle": "Cuatro misiones fundamentales dan origen a ocho huellas de acción con las que Tzu Chi acompaña, sirve y transforma comunidades.",
+            "founder.eyebrow": "Nuestra fundadora",
+            "founder.title": "Maestra Cheng Yen",
+            "founder.desc": "En 1966, la Maestra Cheng Yen fundó Tzu Chi con un propósito sencillo y profundo: transformar la compasión en acciones concretas que alivien el sufrimiento y eleven el espíritu de quienes ayudan y reciben ayuda.",
+            "founder.link": "Conoce su historia",
+            "founder.caption": "Fundadora de la Fundación Budista Tzu Chi",
+            "section3.title": "Nuestros Valores",
+            "section3.gratitud": "Gratitud",
+            "section3.respeto": "Respeto",
+            "section3.amor": "Amor",
+            "section3.compasion": "Compasión",
+            "section3.servicio": "Servicio",
+            "section4.title": "Nuestra Historia en RD",
+            "section5.title": "Eventos Recientes",
+            "section5.viewall": "Ver todos",
+            "section6.title": "Noticias e Historias",
+            "section8.title": "Tu tiempo puede transformar una vida",
+            "section8.desc": "Únete a nuestra red de compasión. Cada pequeño esfuerzo cuenta cuando se suma al de miles de corazones dispuestos a servir.",
+            "section8.button": "Convertirme en Voluntario",
+            "section9.title": "Tu donación puede convertirse en esperanza",
+            "section9.desc": "Con tu aporte económico nos ayudas a llevar alimentos, medicinas, educación y socorro a quienes más lo necesitan en la República Dominicana.",
+            "section9.button": "Hacer una Donación",
+            "section10.title": "Contáctenos"
+        };
+
+        const english = {
+            "header.brand": "Tzu Chi Buddhist Foundation DR",
+            "header.quienes": "Who We Are",
+            "header.que-hacemos": "What We Do",
+            "header.valores": "Our Values",
+            "header.llegada": "Arrival in DR",
+            "header.eventos": "Events",
+            "header.volunteer": "Join as a Volunteer",
+            "header.donate": "Make a Donation",
+            "hero.subtitle": "Dominican Republic",
+            "hero.title": "Sowing compassion, transforming lives.",
+            "hero.desc": "At Tzu Chi DR we serve our communities with compassion, love, and humanitarian action.",
+            "hero.volunteer": "Join as a Volunteer",
+            "hero.donate": "Make a Donation",
+            "section1.title": "Who We Are",
+            "section1.desc": "Founded on the principles of sincerity, integrity, trust, and honesty, the Tzu Chi Buddhist Foundation is an international humanitarian organization dedicated to relieving suffering worldwide.",
+            "section1.btn": "Learn more",
+            "founder.eyebrow": "Our Founder",
+            "founder.title": "Dharma Master Cheng Yen",
+            "founder.desc": "In 1966, Dharma Master Cheng Yen founded Tzu Chi with a simple and profound purpose: to turn compassion into concrete actions that relieve suffering and uplift the spirit of both giver and recipient.",
+            "founder.link": "Learn Her Story",
+            "founder.caption": "Founder of the Tzu Chi Buddhist Foundation",
+            "section3.title": "Our Values",
+            "section3.gratitud": "Gratitude",
+            "section3.respeto": "Respect",
+            "section3.amor": "Love",
+            "section3.compasion": "Compassion",
+            "section3.servicio": "Service",
+            "section4.title": "Our Story in DR",
+            "section5.title": "Recent Events",
+            "section5.viewall": "View all",
+            "section6.title": "News and Stories",
+            "section8.title": "Your time can transform a life",
+            "section8.desc": "Join our network of compassion. Every small effort counts when added to the efforts of thousands of hearts willing to serve.",
+            "section8.button": "Become a Volunteer",
+            "section9.title": "Your donation can become hope",
+            "section9.desc": "With your financial contribution, you help us provide food, medicine, education, and relief to those in greatest need in the Dominican Republic.",
+            "section9.button": "Make a Donation",
+            "section10.title": "Contact Us"
+        };
+
+        const chinese = {
+            "header.brand": "慈濟基金會多明尼加",
+            "header.quienes": "關於我們",
+            "header.que-hacemos": "我們的使命",
+            "header.valores": "我們的價值觀",
+            "header.llegada": "抵達多明尼加",
+            "header.eventos": "活動",
+            "header.volunteer": "加入志工行列",
+            "header.donate": "捐款",
+            "hero.subtitle": "多明尼加共和國",
+            "hero.title": "播下慈悲，改變生命。",
+            "hero.desc": "在慈濟多明尼加，我們以慈悲、愛心和人道行動服務社區。",
+            "hero.volunteer": "加入志工行列",
+            "hero.donate": "捐款",
+            "section1.title": "關於我們",
+            "section1.desc": "慈濟基金會是一個以誠信、正直、信任和誠實為原則的國際人道組織，致力於減輕全球的苦難。",
+            "section1.btn": "瞭解更多",
+            "founder.eyebrow": "我們的創辦人",
+            "founder.title": "證嚴法師",
+            "founder.desc": "1966年，證嚴法師以簡單而深遠的初衷創立慈濟：將慈悲化為實際行動，減輕苦難，也提升施與受者的精神。",
+            "founder.link": "瞭解她的故事",
+            "founder.caption": "慈濟基金會創辦人",
+            "section3.title": "我們的價值觀",
+            "section3.gratitud": "感恩",
+            "section3.respeto": "尊重",
+            "section3.amor": "愛",
+            "section3.compasion": "慈悲",
+            "section3.servicio": "服務",
+            "section4.title": "我們在多明尼加的故事",
+            "section5.title": "最近活動",
+            "section5.viewall": "查看全部",
+            "section6.title": "新聞與故事",
+            "section8.title": "您的時間可以改變一個生命",
+            "section8.desc": "加入我們的慈悲網絡。每一點小小的努力，當與千千萬萬顆願意服務的心相結合時，都能發揮力量。",
+            "section8.button": "成為志工",
+            "section9.title": "您的捐款可以變成希望",
+            "section9.desc": "透過您的捐款，我們能為多明尼加最需要幫助的人提供食物、藥品、教育和救助。",
+            "section9.button": "捐款",
+            "section10.title": "聯繫我們"
+        };
+
+        Object.assign(translations.es, spanish);
+        Object.assign(translations.en, english);
+        Object.assign(translations.zh, chinese);
+
+        const completeTranslations = {
+            en: {
+                "Nuestras áreas de acción": "Our areas of action",
+                "Nuestras Misiones y sus Huellas en el Mundo": "Our Missions and Their Footprints in the World",
+                "Cuatro misiones fundamentales dan origen a ocho huellas de acción con las que Tzu Chi acompaña, sirve y transforma comunidades.": "Four fundamental missions give rise to eight footprints of action through which Tzu Chi accompanies, serves, and transforms communities.",
+                "MISIÓN": "MISSION",
+                "Huella": "Footprint",
+                "Caridad": "Charity",
+                "Ayuda directa y acompañamiento a familias y comunidades vulnerables.": "Direct aid and accompaniment to vulnerable families and communities.",
+                "Caridad comunitaria": "Community charity",
+                "Ayuda humanitaria internacional": "International humanitarian aid",
+                "Medicina": "Medicine",
+                "Atención médica gratuita y prevención que protegen la salud humana.": "Free medical care and prevention that protect human health.",
+                "Jornadas médicas comunitarias": "Community medical visits",
+                "Donación de médula ósea": "Bone marrow donation",
+                "Educación": "Education",
+                "Formación académica y de valores para cultivar personas conscientes.": "Academic and values education to cultivate conscious individuals.",
+                "Educación y escuelas Tzu Chi": "Tzu Chi education and schools",
+                "Protección del medio ambiente": "Environmental protection",
+                "Cultura Humanista": "Humanistic Culture",
+                "Difusión de valores que promueven paz, gratitud y armonía social.": "Dissemination of values that promote peace, gratitude, and social harmony.",
+                "Cultura humanista y difusión de valores": "Humanistic culture and value dissemination",
+                "Voluntariado comunitario": "Community volunteering",
+                "28 años de servicio": "28 years of service",
+                "Explora los hitos que han formado el compromiso de Tzu Chi con la educación, la salud y la esperanza en República Dominicana.": "Explore the milestones that have shaped Tzu Chi's commitment to education, health, and hope in the Dominican Republic.",
+                "Anterior": "Previous",
+                "Siguiente": "Next",
+                "617 familias reciben asistencia en Monte Plata": "617 families receive assistance in Monte Plata",
+                "El 11 de octubre de 2026, 56 voluntarios llevaron asistencia alimentaria a tres comunidades de Monte Plata mediante una red de centros educativos y alianzas locales.": "On October 11, 2026, 56 volunteers delivered food assistance to three communities in Monte Plata through a network of educational centers and local partnerships.",
+                "Leer historia completa": "Read full story",
+                "Taller Infantil del Espacio Tzu Chi-Los Ríos": "Children's Workshop at the Tzu Chi-Los Ríos Space",
+                "16 noviembre, 2026": "November 16, 2026",
+                "Plan Lea promueve liderazgo con distinción": "Plan Lea promotes distinguished leadership",
+                "16 octubre, 2026": "October 16, 2026",
+                "56 voluntarios llevan esperanza a Monte Plata": "56 volunteers bring hope to Monte Plata",
+                "12 octubre, 2026": "October 12, 2026",
+                "Nuestro Impacto": "Our Impact",
+                "Beneficiarios": "Beneficiaries",
+                "Voluntarios": "Volunteers",
+                "Actividades Anuales": "Annual Activities",
+                "Comunidades Atendidas": "Communities Served",
+                "Calle La Plaza No 3, Renacimiento": "Calle La Plaza No 3, Renacimiento",
+                "(Cerca de Ministerio de Defensa), Santo Domingo": "(Near the Ministry of Defense), Santo Domingo",
+                "Línea de tiempo de Tzu Chi en República Dominicana": "Tzu Chi timeline in the Dominican Republic",
+                "Tzu Chi Logo": "Tzu Chi Logo",
+                "Tzu Chi": "Tzu Chi",
+                "Taller Infantil Los Ríos": "Children's Workshop Los Ríos",
+                "Plan Lea y Aforismos Jing Si": "Plan Lea and Jing Si Aphorisms",
+                "Voluntariado y ayuda comunitaria": "Volunteering and Community Assistance",
+                "Plan Lea y liderazgo educativo": "Plan Lea and Educational Leadership",
+                "Asistencia alimentaria en Monte Plata": "Food Assistance in Monte Plata",
+                "Tzu Chi lleva amor y solidaridad a Sabana de la Mar": "Tzu Chi brings love and solidarity to Sabana de la Mar",
+                "Nuestra fundadora": "Our Founder",
+                "Maestra Cheng Yen": "Dharma Master Cheng Yen",
+                "En 1966, la Maestra Cheng Yen fundó Tzu Chi con un propósito sencillo y profundo: transformar la compasión en acciones concretas que alivien el sufrimiento y eleven el espíritu de quienes ayudan y reciben ayuda.": "In 1966, Dharma Master Cheng Yen founded Tzu Chi with a simple and profound purpose: to turn compassion into concrete actions that relieve suffering and uplift the spirit of both giver and recipient.",
+                "Conoce su historia": "Learn Her Story",
+                "Fundadora de la Fundación Budista Tzu Chi": "Founder of the Tzu Chi Buddhist Foundation",
+                "Maestra Cheng Yen, fundadora de Tzu Chi": "Master Cheng Yen, founder of Tzu Chi",
+                "Mapa Tzu Chi": "Tzu Chi Map",
+                "Envíanos un mensaje": "Send us a message",
+                "Nombre": "Name",
+                "Correo Electrónico": "Email",
+                "Mensaje": "Message",
+                "Enviar Mensaje": "Send Message",
+                "Enlaces": "Links",
+                "Política de Privacidad": "Privacy Policy",
+                "Contacto": "Contact",
+                "Santo Domingo, República Dominicana": "Santo Domingo, Dominican Republic",
+                "Síguenos en Facebook": "Follow us on Facebook",
+                "Síguenos en Instagram": "Follow us on Instagram",
+                "Síguenos en YouTube": "Follow us on YouTube",
+                "Volver arriba": "Back to top",
+                "Global": "Global",
+                "Tienda Jing Si": "Jing Si Store",
+                "Da Ai TV": "Da Ai TV",
+                "Contáctenos": "Contact Us",
+                "Español": "Spanish",
+                "English": "English",
+                "中文": "中文",
+                "Fundación Budista Tzu Chi RD": "Tzu Chi Buddhist Foundation DR",
+                "Compasión en acción. Aliviando el sufrimiento y trayendo esperanza a las comunidades de la República Dominicana a través del amor y el servicio desinteresado.": "Compassion in action. Alleviating suffering and bringing hope to communities in the Dominican Republic through love and selfless service.",
+                "© 2026 Fundación Budista Tzu Chi República Dominicana. Todos los derechos reservados.": "© 2026 Tzu Chi Buddhist Foundation Dominican Republic. All rights reserved."
+            },
+            zh: {
+                "Nuestras áreas de acción": "我們的行動領域",
+                "Nuestras Misiones y sus Huellas en el Mundo": "我們的使命及其在世界上的足跡",
+                "Cuatro misiones fundamentales dan origen a ocho huellas de acción con las que Tzu Chi acompaña, sirve y transforma comunidades.": "四項基本使命產生八個行動足跡，慈濟藉此陪伴、服務並改變社區。",
+                "MISIÓN": "使命",
+                "Huella": "足跡",
+                "Caridad": "慈善",
+                "Ayuda directa y acompañamiento a familias y comunidades vulnerables.": "直接援助並陪伴弱勢家庭和社區。",
+                "Caridad comunitaria": "社區慈善",
+                "Ayuda humanitaria internacional": "國際人道援助",
+                "Medicina": "醫療",
+                "Atención médica gratuita y prevención que protegen la salud humana.": "免費醫療與預防服務，守護人類健康。",
+                "Jornadas médicas comunitarias": "社區醫療服務",
+                "Donación de médula ósea": "骨髓捐贈",
+                "Educación": "教育",
+                "Formación académica y de valores para cultivar personas conscientes.": "透過學術與品格教育培育有責任感的人。",
+                "Educación y escuelas Tzu Chi": "慈濟教育與學校",
+                "Protección del medio ambiente": "環境保護",
+                "Cultura Humanista": "人文文化",
+                "Difusión de valores que promueven paz, gratitud y armonía social.": "傳播促進和平、感恩與社會和諧的價值觀。",
+                "Cultura humanista y difusión de valores": "人文文化與價值觀傳播",
+                "Voluntariado comunitario": "社區志工服務",
+                "28 años de servicio": "服務28年",
+                "Explora los hitos que han formado el compromiso de Tzu Chi con la educación, la salud y la esperanza en República Dominicana.": "探索慈濟在多明尼加對教育、健康與希望的承諾所建立的里程碑。",
+                "Anterior": "上一頁",
+                "Siguiente": "下一頁",
+                "617 familias reciben asistencia en Monte Plata": "617個家庭在蒙特普拉塔接受援助",
+                "El 11 de octubre de 2026, 56 voluntarios llevaron asistencia alimentaria a tres comunidades de Monte Plata mediante una red de centros educativos y alianzas locales.": "2026年10月11日，56名志工透過教育中心與在地合作夥伴網絡，向蒙特普拉塔的三個社區提供食物援助。",
+                "Leer historia completa": "閱讀完整故事",
+                "Taller Infantil del Espacio Tzu Chi-Los Ríos": "慈濟－洛斯里奧斯兒童工作坊",
+                "16 noviembre, 2026": "2026年11月16日",
+                "Plan Lea promueve liderazgo con distinción": "計劃Lea卓越領導力活動",
+                "16 octubre, 2026": "2026年10月16日",
+                "56 voluntarios llevan esperanza a Monte Plata": "56名志工為蒙特普拉塔帶來希望",
+                "12 octubre, 2026": "2026年10月12日",
+                "Nuestro Impacto": "我們的影響",
+                "Beneficiarios": "受益人",
+                "Voluntarios": "志工",
+                "Actividades Anuales": "年度活動",
+                "Comunidades Atendidas": "服務社區",
+                "Calle La Plaza No 3, Renacimiento": "Calle La Plaza No 3, Renacimiento",
+                "(Cerca de Ministerio de Defensa), Santo Domingo": "（國防部附近），聖多明哥",
+                "Línea de tiempo de Tzu Chi en República Dominicana": "慈濟在多明尼加共和國的時程",
+                "Tzu Chi Logo": "慈濟標誌",
+                "Tzu Chi": "慈濟",
+                "Taller Infantil Los Ríos": "洛斯里奧斯兒童工作坊",
+                "Plan Lea y Aforismos Jing Si": "Plan Lea與靜思語錄",
+                "Voluntariado y ayuda comunitaria": "志工服務與社區援助",
+                "Plan Lea y liderazgo educativo": "Plan Lea與教育領導力",
+                "Asistencia alimentaria en Monte Plata": "蒙特普拉塔食物援助",
+                "Tzu Chi lleva amor y solidaridad a Sabana de la Mar": "慈濟為薩巴納德拉馬帶來愛與團結",
+                "Nuestra fundadora": "我們的創辦人",
+                "Maestra Cheng Yen": "證嚴法師",
+                "En 1966, la Maestra Cheng Yen fundó Tzu Chi con un propósito sencillo y profundo: transformar la compasión en acciones concretas que alivien el sufrimiento y eleven el espíritu de quienes ayudan y reciben ayuda.": "1966年，證嚴法師以簡單而深遠的初衷創立慈濟：將慈悲化為實際行動，減輕苦難，也提升施與受者的精神。",
+                "Conoce su historia": "瞭解她的故事",
+                "Fundadora de la Fundación Budista Tzu Chi": "慈濟基金會創辦人",
+                "Maestra Cheng Yen, fundadora de Tzu Chi": "慈濟創辦人證嚴法師",
+                "Mapa Tzu Chi": "慈濟地圖",
+                "Envíanos un mensaje": "給我們發送消息",
+                "Nombre": "姓名",
+                "Correo Electrónico": "電子郵件",
+                "Mensaje": "留言",
+                "Enviar Mensaje": "發送消息",
+                "Enlaces": "連結",
+                "Política de Privacidad": "隱私政策",
+                "Contacto": "聯繫方式",
+                "Santo Domingo, República Dominicana": "聖多明哥，多明尼加共和國",
+                "Síguenos en Facebook": "在Facebook追蹤我們",
+                "Síguenos en Instagram": "在Instagram追蹤我們",
+                "Síguenos en YouTube": "在YouTube追蹤我們",
+                "Volver arriba": "返回頂部",
+                "Global": "全球",
+                "Tienda Jing Si": "靜思商店",
+                "Da Ai TV": "大愛電視",
+                "Contáctenos": "聯繫我們",
+                "Español": "西班牙文",
+                "English": "英文",
+                "中文": "中文",
+                "Fundación Budista Tzu Chi RD": "慈濟基金會多明尼加",
+                "Compasión en acción. Aliviando el sufrimiento y trayendo esperanza a las comunidades de la República Dominicana a través del amor y el servicio desinteresado.": "慈悲付諸行動。透過愛與無私服務，減輕多明尼加社區的苦難並帶來希望。",
+                "© 2026 Fundación Budista Tzu Chi República Dominicana. Todos los derechos reservados.": "© 2026 多明尼加慈濟基金會。版權所有。"
+            }
+        };
+
+        Object.assign(translations.en, completeTranslations.en);
+        Object.assign(translations.zh, completeTranslations.zh);
+
+        const originalTextNodes = new Map();
+        const textWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+        let textNode;
+        while ((textNode = textWalker.nextNode())) {
+            const original = textNode.textContent.trim();
+            if (original) originalTextNodes.set(textNode, original);
+        }
+
+        const originalAttributes = new Map();
+        document.querySelectorAll("[aria-label], [title], [placeholder], [alt]").forEach(function (element) {
+            ["aria-label", "title", "placeholder", "alt"].forEach(function (attribute) {
+                if (element.hasAttribute(attribute)) {
+                    originalAttributes.set(element, {
+                        ...(originalAttributes.get(element) || {}),
+                        [attribute]: element.getAttribute(attribute)
+                    });
+                }
+            });
+        });
+
+        function setLanguage(language) {
+            if (!translations[language]) language = "es";
+            document.documentElement.lang = language;
+
+            originalTextNodes.forEach(function (original, node) {
+                const value = language === "es"
+                    ? original
+                    : (translations[language][original] || original);
+                node.textContent = value;
+            });
+
+            originalAttributes.forEach(function (attributes, element) {
+                Object.keys(attributes).forEach(function (attribute) {
+                    const original = attributes[attribute];
+                    const value = language === "es"
+                        ? original
+                        : (translations[language][original] || original);
+                    element.setAttribute(attribute, value);
+                });
+            });
+
+            localStorage.setItem("tzuChiLanguage", language);
+
+            document.querySelectorAll("[data-i18n]").forEach(function (element) {
+                const key = element.getAttribute("data-i18n");
+                const value = translations[language][key];
+                if (value) element.textContent = value;
+            });
+
+            document.querySelectorAll("[data-lang-selector]").forEach(function (button) {
+                const selected = button.getAttribute("data-lang-selector") === language;
+                button.classList.toggle("active-lang", selected);
+                button.style.fontWeight = selected ? "bold" : "normal";
+            });
+        }
+
+        document.querySelectorAll("[data-lang-selector]").forEach(function (button) {
+            button.addEventListener("click", function (event) {
+                event.preventDefault();
+                setLanguage(button.getAttribute("data-lang-selector"));
+            });
+        });
+
+        const savedLanguage = localStorage.getItem("tzuChiLanguage");
+        setLanguage(savedLanguage && translations[savedLanguage] ? savedLanguage : "es");
+    })();
+</script>
 <!-- Botón volver arriba -->
 <button
     id="backToTop"
